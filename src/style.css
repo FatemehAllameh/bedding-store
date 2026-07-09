@@ -8,6 +8,8 @@ body {
 
 @theme {
   --color-primary: #5eb5f8;
+  --color-secondary: #1f2732;
+  --color-light-gray: #858585;
 }
 
 @layer components {
@@ -36,15 +38,18 @@ body {
 
   /* Nav Menu */
   .nav {
-    @apply absolute top-full left-0 right-0 bg-white bg-[#363636] w-full max-h-0 overflow-hidden transition-all duration-200;
+    @apply absolute top-full left-0 right-0 bg-white bg-[#363636] w-full max-h-0 overflow-hidden transition-all duration-200 md:static md:overflow-visible md:max-h-none;
   }
   .nav.open {
     @apply max-h-[24rem] p-3 pt-5;
   }
   .nav-menu {
-    @apply flex items-center justify-center flex-col gap-1;
+    @apply flex items-center justify-center flex-col gap-2 md:flex-row md:gap-4;
   }
   .nav-menu__item {
-    @apply transition-all duration-200 hover:text-primary;
+    @apply transition-all duration-200;
+  }
+  .nav-menu__link--active {
+    @apply text-secondary;
   }
 }
