@@ -6,6 +6,7 @@ const header = $.querySelector("#header");
 function initMenu() {
   const menuBtn = $.querySelector(".menu-btn");
   const nav = $.querySelector(".nav");
+  const overlay = $.querySelector(".overlay")
   const closeBtn = $.querySelector(".close-btn");
   const announcementBar = $.querySelector(".announcement-bar")
 
@@ -14,6 +15,7 @@ function initMenu() {
   menuBtn.addEventListener("click", (e) => {
     menuBtn.classList.toggle("active");
     nav.classList.toggle("open");
+    overlay.classList.toggle("active")
   });
   closeBtn.addEventListener("click", () => {
     announcementBar.classList.remove("md:block")

@@ -7,12 +7,22 @@ body {
 }
 
 @theme {
+  /* Fonts */
+  --font-modam: "modam", sans-serif;
+  /* Colors */
   --color-primary: #5eb5f8;
   --color-secondary: #1f2732;
   --color-light-gray: #858585;
 }
 
 @layer components {
+  /* Overlay */
+  .overlay {
+    @apply fixed md:hidden top-14 inset-x-0 bottom-0 bg-black/20 opacity-0 invisible transition-all duration-200 z-40;
+  }
+  .overlay.active {
+    @apply opacity-100 visible;
+  }
   /* Hamburger Button */
   .menu-btn {
     @apply relative w-10 h-10 flex flex-col items-center justify-center gap-[3.5px] bg-primary md:hidden rounded-lg;
@@ -21,7 +31,7 @@ body {
     @apply absolute w-5 h-0.5 bg-white rounded transition-all duration-200 ease-in-out;
   }
   .menu-btn__line--top {
-    @apply top-[14px];
+    @apply top-3.5;
   }
   .menu-btn__line--bottom {
     @apply bottom-[13.5px];
@@ -38,10 +48,10 @@ body {
 
   /* Nav Menu */
   .nav {
-    @apply absolute top-full left-0 right-0 bg-white bg-[#363636] w-full max-h-0 overflow-hidden transition-all duration-200 md:static md:overflow-visible md:max-h-none;
+    @apply absolute z-50 top-full left-0 right-0 bg-white w-full max-h-0 overflow-hidden transition-all duration-200 md:static md:overflow-visible md:max-h-none;
   }
   .nav.open {
-    @apply max-h-[24rem] p-3 pt-5;
+    @apply max-h-96 p-3 pt-5;
   }
   .nav-menu {
     @apply flex items-center justify-center flex-col gap-2 md:flex-row md:gap-4;
