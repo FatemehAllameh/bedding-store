@@ -9,7 +9,254 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="header"></header>
+    <header class="mt-4">
+      <!-- Announcement Bar -->
+      <div class="announcement-bar hidden md:block mb-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="relative flex items-center justify-center gap-2 rounded-lg bg-primary p-2"
+          >
+            <p class="text-xs text-white">
+              تخفیف ها شروع شده همین الان خرید کن
+            </p>
+            <a href="#">
+              <svg
+                class="cursor-pointer"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+              >
+                <path
+                  d="M4.75 0.75L0.75 4.75L4.75 8.75M0.75 4.75L12.75 4.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <button
+              class="close-btn absolute left-4 cursor-pointer"
+              type="button"
+            >
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M9.23528 0.750052L0.75 9.23533M9.23528 9.23528L0.75 0.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container relative flex justify-between items-center mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <!-- Hamburger Button -->
+        <button type="button" class="menu-btn">
+          <span class="menu-btn__line menu-btn__line--top"></span>
+          <span class="menu-btn__line menu-btn__line--middle"></span>
+          <span class="menu-btn__line menu-btn__line--bottom"></span>
+        </button>
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-1.5">
+          <div class="relative w-10 h-10">
+            <div class="absolute w-7 h-7 rounded-full bg-[#363636]"></div>
+            <div
+              class="absolute w-6 h-6 rounded-full bg-primary left-0.5 top-2.5"
+            ></div>
+          </div>
+          <p class="font-bold text-[#3C3C3C]">آرامیس</p>
+        </a>
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs hover:text-secondary nav-menu__link--active"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >روتختی ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >تشک ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >بالش ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="text-xs text-light-gray hover:text-secondary"
+                >درباره ما</a
+              >
+            </li>
+            <li class="nav-menu__item md:hidden">
+              <a href="#" class="text-xs text-light-gray hover:text-secondary"
+                >حساب کاربری</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Search Icon -->
+        <svg
+          class="hidden md:flex w-6 h-6 cursor-pointer"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+            stroke="#1F2732"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22 22L20 20"
+            stroke="#1F2732"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <!-- Cart Icon -->
+        <a
+          href="#"
+          class="inline-flex items-center justify-center mr-3 rounded-lg w-10 h-10 bg-primary md:bg-inherit"
+        >
+          <svg
+            class="w-5 h-5 text-white md:text-secondary"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.00001 22H15C19.02 22 19.74 20.39 19.95 18.43L20.7 12.43C20.97 9.99 20.27 8 16 8H8.00001C3.73001 8 3.03001 9.99 3.30001 12.43L4.05001 18.43C4.26001 20.39 4.98001 22 9.00001 22Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.4955 12H15.5045"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.49451 12H8.50349"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <!-- User Icon -->
+        <svg
+          class="hidden md:flex w-5 h-5 mr-3 cursor-pointer"
+          viewBox="0 0 16 20"
+          fill="none"
+        >
+          <path
+            d="M12 5H11C11 6.65685 9.65685 8 8 8V9V10C10.7614 10 13 7.76142 13 5H12ZM8 9V8C6.34315 8 5 6.65685 5 5H4H3C3 7.76142 5.23858 10 8 10V9ZM4 5H5C5 3.34315 6.34315 2 8 2V1V0C5.23858 0 3 2.23858 3 5H4ZM8 1V2C9.65685 2 11 3.34315 11 5H12H13C13 2.23858 10.7614 0 8 0V1ZM15 15.5H14C14 15.8837 13.663 16.5002 12.5025 17.0804C11.4019 17.6308 9.81141 18 8 18V19V20C10.0546 20 11.9641 19.5857 13.397 18.8693C14.77 18.1828 16 17.0493 16 15.5H15ZM8 19V18C6.18859 18 4.5981 17.6308 3.49747 17.0804C2.33702 16.5002 2 15.8837 2 15.5H1H0C0 17.0493 1.22998 18.1828 2.60304 18.8693C4.03591 19.5857 5.94542 20 8 20V19ZM1 15.5H2C2 15.1163 2.33702 14.4998 3.49747 13.9196C4.5981 13.3692 6.18859 13 8 13V12V11C5.94542 11 4.03591 11.4143 2.60304 12.1307C1.22998 12.8172 0 13.9507 0 15.5H1ZM8 12V13C9.81141 13 11.4019 13.3692 12.5025 13.9196C13.663 14.4998 14 15.1163 14 15.5H15H16C16 13.9507 14.77 12.8172 13.397 12.1307C11.9641 11.4143 10.0546 11 8 11V12Z"
+            fill="#373333"
+          />
+        </svg>
+      </div>
+      <div
+        class="container relative flex justify-between items-center mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <form
+          action=""
+          class="flex items-center bg-[#F7F7F7] p-2 mt-6 h-12 rounded-lg md:hidden w-full"
+        >
+          <input
+            class="w-full pr-1 pl-1 outline-none"
+            type="text"
+            placeholder="جستجو..."
+          />
+          <button type="submit">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                stroke="#1F2732"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 22L20 20"
+                stroke="#1F2732"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+    <!-- Overlay -->
     <div class="overlay"></div>
     <!-- Main -->
     <main class="mt-6">
@@ -678,6 +925,219 @@
                 <p class="hidden md:block font-light text-sm">
                   بیش از ۱۰۰۰ مدل محافظ تشک
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Offers and Beds -->
+      <section class="mt-15 mb-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col gap-4 xl:flex-row">
+            <div
+              class="relative w-full bg-secondary text-white flex flex-col items-center justify-start gap-5 min-h-64 rounded-2xl py-5 px-9 xl:w-[20%] xl:overflow-hidden"
+            >
+              <p class="font-modam font-bold text-2xl xl:leading-relaxed">
+                پیشنهـــــادات شگفت انـگیز
+              </p>
+              <div class="flex items-center justify-center gap-3 xl:gap-2">
+                <div
+                  class="bg-white-10 p-1 min-w-11 rounded flex flex-col items-center justify-center"
+                >
+                  <span>08</span>
+                  <span class="text-white/50">ثانیه</span>
+                </div>
+                <div
+                  class="bg-white-10 p-1 min-w-11 rounded flex flex-col items-center justify-center"
+                >
+                  <span>32</span>
+                  <span class="text-white/50">دقیقه</span>
+                </div>
+                <div
+                  class="bg-white-10 p-1 min-w-11 rounded flex flex-col items-center justify-center"
+                >
+                  <span>14</span>
+                  <span class="text-white/50">ساعت</span>
+                </div>
+                <div
+                  class="bg-white-10 p-1 min-w-11 rounded flex flex-col items-center justify-center"
+                >
+                  <span>2</span>
+                  <span class="text-white/50">روز</span>
+                </div>
+              </div>
+              <div class="">
+                <svg
+                  class="absolute bottom-0 left-1/2 -translate-x-1/2"
+                  width="310"
+                  height="56"
+                  viewBox="0 0 310 56"
+                  fill="none"
+                >
+                  <ellipse
+                    cx="155"
+                    cy="148.5"
+                    rx="155"
+                    ry="148.5"
+                    fill="#5EB5F8"
+                  />
+                </svg>
+                <img
+                  src="/images/badge/badge2.png"
+                  class="absolute bottom-0 left-1/2 -translate-x-1/2"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- Beds -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+              <!-- Bed 1 -->
+              <div
+                class="bg-product-bg flex items-stretch lg:flex-col gap-3 p-3 rounded-xl"
+              >
+                <div class="w-[30%] lg:w-full">
+                  <img
+                    src="/images/products/bed-01.jpg"
+                    class="rounded-xl w-full"
+                    alt=""
+                  />
+                </div>
+                <p class="hidden lg:block text-sm text-secondary">
+                  تشک طبی بدون فنر پارادوکس
+                </p>
+                <div
+                  class="bg-white w-[70%] lg:w-full flex justify-center flex-col gap-5 px-2 rounded-xl"
+                >
+                  <p class="text-sm text-secondary lg:hidden">
+                    تشک طبی بدون فنر پارادوکس
+                  </p>
+                  <div class="flex justify-between lg:h-14 lg:items-center">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-xs text-old-price">
+                        <span class="line-through">۱۶.۵۰۰.۰۰۰</span>
+                        <span class="line-through">تومان</span>
+                      </p>
+
+                      <p class="text-sm text-price">۱۵.۹۰۰.۰۰۰</p>
+                    </div>
+                    <p
+                      class="text-base bg-light-blue text-primary rounded-lg flex items-center justify-center px-1 w-10 h-10"
+                    >
+                      ۲۰٪
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bed 2 -->
+              <div
+                class="bg-product-bg flex items-stretch lg:flex-col gap-3 p-3 rounded-xl"
+              >
+                <div class="w-[30%] lg:w-full">
+                  <img
+                    src="/images/products/bed-01.jpg"
+                    class="rounded-xl w-full"
+                    alt=""
+                  />
+                </div>
+                <p class="hidden lg:block text-sm text-secondary">
+                  تشک طبی بدون فنر پارادوکس
+                </p>
+                <div
+                  class="bg-white w-[70%] lg:w-full flex justify-center flex-col gap-5 px-2 rounded-xl"
+                >
+                  <p class="text-sm text-secondary lg:hidden">
+                    تشک طبی بدون فنر پارادوکس
+                  </p>
+                  <div class="flex justify-between lg:h-14 lg:items-center">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-xs text-old-price">
+                        <span class="line-through">۱۶.۵۰۰.۰۰۰</span>
+                        <span class="line-through">تومان</span>
+                      </p>
+
+                      <p class="text-sm text-price">۱۵.۹۰۰.۰۰۰</p>
+                    </div>
+                    <p
+                      class="text-base bg-light-blue text-primary rounded-lg flex items-center justify-center px-1 w-10 h-10"
+                    >
+                      ۲۰٪
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bed 3 -->
+              <div
+                class="bg-product-bg flex items-stretch lg:flex-col gap-3 p-3 rounded-xl"
+              >
+                <div class="w-[30%] lg:w-full">
+                  <img
+                    src="/images/products/bed-01.jpg"
+                    class="rounded-xl w-full"
+                    alt=""
+                  />
+                </div>
+                <p class="hidden lg:block text-sm text-secondary">
+                  تشک طبی بدون فنر پارادوکس
+                </p>
+                <div
+                  class="bg-white w-[70%] lg:w-full flex justify-center flex-col gap-5 px-2 rounded-xl"
+                >
+                  <p class="text-sm text-secondary lg:hidden">
+                    تشک طبی بدون فنر پارادوکس
+                  </p>
+                  <div class="flex justify-between lg:h-14 lg:items-center">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-xs text-old-price">
+                        <span class="line-through">۱۶.۵۰۰.۰۰۰</span>
+                        <span class="line-through">تومان</span>
+                      </p>
+
+                      <p class="text-sm text-price">۱۵.۹۰۰.۰۰۰</p>
+                    </div>
+                    <p
+                      class="text-base bg-light-blue text-primary rounded-lg flex items-center justify-center px-1 w-10 h-10"
+                    >
+                      ۲۰٪
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bed 4 -->
+              <div
+                class="bg-product-bg flex items-stretch lg:flex-col gap-3 p-3 rounded-xl"
+              >
+                <div class="w-[30%] lg:w-full">
+                  <img
+                    src="/images/products/bed-01.jpg"
+                    class="rounded-xl w-full"
+                    alt=""
+                  />
+                </div>
+                <p class="hidden lg:block text-sm text-secondary">
+                  تشک طبی بدون فنر پارادوکس
+                </p>
+                <div
+                  class="bg-white w-[70%] lg:w-full flex justify-center flex-col gap-5 px-2 rounded-xl"
+                >
+                  <p class="text-sm text-secondary lg:hidden">
+                    تشک طبی بدون فنر پارادوکس
+                  </p>
+                  <div class="flex justify-between lg:h-14 lg:items-center">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-xs text-old-price">
+                        <span class="line-through">۱۶.۵۰۰.۰۰۰</span>
+                        <span class="line-through">تومان</span>
+                      </p>
+
+                      <p class="text-sm text-price">۱۵.۹۰۰.۰۰۰</p>
+                    </div>
+                    <p
+                      class="text-base bg-light-blue text-primary rounded-lg flex items-center justify-center px-1 w-10 h-10"
+                    >
+                      ۲۰٪
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
