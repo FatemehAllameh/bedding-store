@@ -13,6 +13,7 @@ body {
   --color-primary: #5eb5f8;
   --color-secondary: #1f2732;
   --color-light-gray: #858585;
+  --color-light-blue: #edf6fd;
 }
 
 @layer components {
