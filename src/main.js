@@ -1,14 +1,13 @@
 import "./style.css";
-const $ = document;
 
-const header = $.querySelector("#header");
+const header = document.querySelector("#header");
 
 function initMenu() {
-  const menuBtn = $.querySelector(".menu-btn");
-  const nav = $.querySelector(".nav");
-  const overlay = $.querySelector(".overlay")
-  const closeBtn = $.querySelector(".close-btn");
-  const announcementBar = $.querySelector(".announcement-bar")
+  const menuBtn = document.querySelector(".menu-btn");
+  const nav = document.querySelector(".nav");
+  const overlay = document.querySelector(".overlay")
+  const closeBtn = document.querySelector(".close-btn");
+  const announcementBar = document.querySelector(".announcement-bar")
 
   if (!menuBtn || !nav || !closeBtn || !announcementBar) return;
 
