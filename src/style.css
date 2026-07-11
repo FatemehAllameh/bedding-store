@@ -4,13 +4,19 @@
 body {
   font-family: "YekanBakh", sans-serif;
   font-weight: 400;
-  background-image: repeating-linear-gradient(
-    to right,
-    #fbfbfb 0,
-    #fbfbfb 4px,
-    transparent 4px,
-    transparent 75px
-  );
+  background-image: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: repeating-linear-gradient(
+      to right,
+      #fbfbfb 0,
+      #fbfbfb 4px,
+      transparent 4px,
+      transparent 75px
+    );
+  }
 }
 
 @theme {
