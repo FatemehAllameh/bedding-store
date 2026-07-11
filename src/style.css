@@ -4,6 +4,13 @@
 body {
   font-family: "YekanBakh", sans-serif;
   font-weight: 400;
+  background-image: repeating-linear-gradient(
+    to right,
+    #fbfbfb 0,
+    #fbfbfb 4px,
+    transparent 4px,
+    transparent 75px
+  );
 }
 
 @theme {
@@ -15,9 +22,9 @@ body {
   --color-light-gray: #858585;
   --color-light-blue: #edf6fd;
   --color-white-10: #ffffff1a;
-  --color-product-bg: #F4F4F4;
-  --color-price: #28221E;
-  --color-old-price: #837C74;
+  --color-product-bg: #f4f4f4;
+  --color-price: #28221e;
+  --color-old-price: #837c74;
 }
 
 @layer components {
