@@ -14,7 +14,7 @@
       <div class="announcement-bar hidden md:block mb-6">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            class="relative flex items-center justify-center gap-2 rounded-lg bg-primary p-2"
+            class="relative h-11 flex items-center justify-center gap-2 rounded-lg bg-primary p-2"
           >
             <p class="text-xs text-white">
               تخفیف ها شروع شده همین الان خرید کن
@@ -265,24 +265,26 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col items-center justify-center font-modam">
             <div
-              class="flex flex-col md:flex-row items-center justify-center gap-6 mb-5"
+              class="flex flex-col md:flex-row items-center justify-center gap-6 mb-5 md:gap-3"
             >
-              <p class="text-[#363636] font-bold text-[1.75rem]">
+              <p class="text-[#363636] font-bold text-[1.75rem] md:text-5xl">
                 خواب راحت و آسوده
               </p>
               <p
-                class="relative font-bold text-[1.75rem] bg-secondary text-white py-1 pr-5 pl-16 rounded-lg"
+                class="relative font-bold text-[1.75rem] bg-secondary text-white py-1 pr-5 pl-16 rounded-lg md:text-5xl md:p-2 md:pl-18"
               >
                 با آرامیس
                 <img
                   src="/images/badge/badge1.png"
-                  class="absolute w-16 h-16 -left-2.5 bottom-0"
+                  class="absolute w-16 h-16 -left-2.5 bottom-0 md:w-22.5 md:h-23.5"
                   alt=""
                 />
               </p>
             </div>
 
-            <p class="text-light-gray font-light text-center mb-8">
+            <p
+              class="text-light-gray font-light text-center mb-8 text-sm md:text-lg"
+            >
               وارد کننده بهترین کالاهای خواب وارداتی از کشور های معتبر در سراسر
               جهان
             </p>
@@ -318,11 +320,11 @@
         </div>
         <!-- Header Features -->
         <div
-          class="flex items-center justify-between -mt-12 absolute z-10 w-full py-3 px-8 md:w-[90%] md:left-1/2 md:-translate-x-1/2 md:rounded-lg md:py-5 md:-mt-16.5 lg:w-[70%] bg-secondary text-white"
+          class="h-21 lg:h-26 flex items-center justify-around lg:justify-between -mt-12 absolute z-10 w-full py-3 px-8 lg:w-[90%] lg:left-1/2 lg:-translate-x-1/2 lg:rounded-lg lg:py-5 lg:px-17.75 lg:-mt-16.5 xl:w-[70%] bg-secondary text-white"
         >
-          <div class="flex gap-2">
+          <div class="flex items-center gap-2">
             <svg
-              class="w-9 h-9 p-3 bg-white/20 rounded-lg"
+              class="w-10.75 h-10.75 md:w-13.5 md:h-13.5 p-3 bg-white/20 rounded-lg"
               viewBox="0 0 23 23"
               fill="none"
             >
@@ -390,16 +392,18 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <div>
-              <p class="text-xs">تنوع بالای محصولات</p>
-              <p class="font-light text-[13px] text-light-gray">
+            <div class="flex flex-col gap-2">
+              <p class="text-[14.54px] lg:text-[18px]">تنوع بالای محصولات</p>
+              <p
+                class="font-light text-[10.5px] lg:text-[13px] text-light-gray"
+              >
                 بیش از ۲۰۰ محصول
               </p>
             </div>
           </div>
           <div class="flex gap-2">
             <svg
-              class="w-9 h-9 p-2 bg-white/20 rounded-lg"
+              class="w-10.75 h-10.75 md:w-13.5 md:h-13.5 p-2 bg-white/20 rounded-lg"
               viewBox="0 0 25 25"
               fill="none"
             >
@@ -440,16 +444,20 @@
               />
             </svg>
 
-            <div>
-              <p class="text-xs">پشتیبانی ۲۴ ساعته</p>
-              <p class="font-light text-[13px] text-light-gray">
-                پاسخگوی همیشگی
+            <div class="flex flex-col gap-2">
+              <p class="text-[14.54px] lg:text-[18px]">
+                ارسال رایگان به سراسر کشور
+              </p>
+              <p
+                class="font-light text-[10.5px] lg:text-[13px] text-light-gray"
+              >
+                ارسال با پست به سراسر کشور
               </p>
             </div>
           </div>
-          <div class="hidden md:flex gap-2">
+          <div class="hidden lg:flex gap-2">
             <svg
-              class="w-9 h-9 p-2 bg-white/20 rounded-lg"
+              class="w-10.75 h-10.75 lg:w-13.5 lg:h-13.5 p-2 bg-white/20 rounded-lg"
               viewBox="0 0 27 27"
               fill="none"
             >
@@ -462,10 +470,12 @@
               />
             </svg>
 
-            <div>
-              <p class="text-xs">تنوع بالای محصولات</p>
-              <p class="font-light text-[13px] text-light-gray">
-                بیش از ۲۰۰ محصول
+            <div class="flex flex-col gap-2">
+              <p class="text-[14.54px] lg:text-[18px]">پشتیبانی ۲۴ ساعته</p>
+              <p
+                class="font-light text-[10.5px] lg:text-[13px] text-light-gray"
+              >
+                پاسخگوی همیشگی
               </p>
             </div>
           </div>
@@ -516,7 +526,7 @@
             <!-- Category 1 -->
             <div class="relative">
               <div
-                class="bg-light-blue relative z-10 rounded-xl min-h-24 lg:h-27 max-h-30 mb-4 lg:mb-0"
+                class="bg-light-blue relative z-10 rounded-xl md:h-32 lg:h-29 mb-4 lg:mb-0"
               >
                 <svg
                   class="md:hidden absolute left-0 right-0 top-0 w-full h-[90%] -z-10 rounded-xl"
@@ -545,20 +555,22 @@
                 </svg>
 
                 <div
-                  class="p-3 pt-5 flex items-center justify-center md:justify-end md:ml-6 lg:ml-2 lg:pt-6 lg:p-0 xl:ml-6"
+                  class="p-3 pt-5 flex items-center justify-center md:justify-end md:ml-6 md:pt-10 lg:ml-2 lg:pt-8 xl:ml-6 xl:pt-8"
                 >
                   <img
                     src="/images/categories/mattresses.png"
-                    class="w-28"
+                    class="w-28 xl:w-32"
                     alt=""
                   />
                 </div>
               </div>
               <div
-                class="md:flex items-start justify-center flex-col md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
+                class="md:flex items-start justify-center flex-col md:gap-1 md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
               >
                 <div class="md:flex items-center justify-center gap-1">
-                  <p class="text-center md:font-bold">تشک ها</p>
+                  <p class="text-center md:font-bold text-sm md:text-[22px]">
+                    تشک ها
+                  </p>
                   <svg
                     class="hidden md:block"
                     width="18"
@@ -585,7 +597,7 @@
             <!-- Category 2 -->
             <div class="relative">
               <div
-                class="bg-light-blue relative z-10 rounded-xl min-h-24 lg:h-27 max-h-30 mb-4 lg:mb-0"
+                class="bg-light-blue relative z-10 rounded-xl md:h-32 lg:h-29 mb-4 lg:mb-0"
               >
                 <svg
                   class="md:hidden absolute left-0 right-0 top-0 w-full h-[90%] -z-10 rounded-xl"
@@ -614,20 +626,22 @@
                 </svg>
 
                 <div
-                  class="p-3 pt-5 flex items-center justify-center md:justify-end md:ml-6 lg:ml-2 lg:pt-6 lg:p-0 xl:ml-6"
+                  class="p-3 pt-5 flex items-center justify-center md:justify-end md:pt-10 md:ml-6 lg:ml-2 lg:pt-8 xl:ml-6"
                 >
                   <img
                     src="/images/categories/bedspreads.png"
-                    class="w-28"
+                    class="w-28 xl:w-32"
                     alt=""
                   />
                 </div>
               </div>
               <div
-                class="md:flex items-start justify-center flex-col md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
+                class="md:flex items-start justify-center flex-col md:gap-1 md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
               >
                 <div class="md:flex items-center justify-center gap-1">
-                  <p class="text-center md:font-bold">روتختی ها</p>
+                  <p class="text-center md:font-bold text-sm md:text-[22px]">
+                    روتختی ها
+                  </p>
                   <svg
                     class="hidden md:block"
                     width="18"
@@ -654,7 +668,7 @@
             <!-- Category 3 -->
             <div class="relative">
               <div
-                class="bg-light-blue relative z-10 rounded-xl min-h-24 lg:h-27 max-h-30 mb-4 lg:mb-0"
+                class="bg-light-blue relative z-10 rounded-xl md:h-32 lg:h-29 mb-4 lg:mb-0"
               >
                 <svg
                   class="md:hidden absolute left-0 right-0 top-0 w-full h-[90%] -z-10 rounded-xl"
@@ -683,20 +697,22 @@
                 </svg>
 
                 <div
-                  class="p-3 flex items-center justify-center md:justify-end md:ml-6 lg:ml-2 lg:p-0 lg:pt-2 xl:ml-6"
+                  class="p-3 flex items-center justify-center md:justify-end md:pt-5 md:ml-6 lg:ml-2 lg:pt-3 xl:ml-6"
                 >
                   <img
                     src="/images/categories/pillows.png"
-                    class="w-28"
+                    class="w-12 h-12 md:w-32 md:h-21.75"
                     alt=""
                   />
                 </div>
               </div>
               <div
-                class="md:flex items-start justify-center flex-col md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
+                class="md:flex items-start justify-center flex-col md:gap-1 md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
               >
                 <div class="md:flex items-center justify-center gap-1">
-                  <p class="text-center md:font-bold">بالشت ها</p>
+                  <p class="text-center md:font-bold text-sm md:text-[22px]">
+                    بالشت ها
+                  </p>
                   <svg
                     class="hidden md:block"
                     width="18"
@@ -723,7 +739,7 @@
             <!-- Category 4 -->
             <div class="relative">
               <div
-                class="bg-light-blue relative z-10 rounded-xl min-h-24 lg:h-27 max-h-30 mb-4 lg:mb-0"
+                class="bg-light-blue relative z-10 rounded-xl md:h-32 lg:h-29 mb-4 lg:mb-0"
               >
                 <svg
                   class="md:hidden absolute left-0 right-0 top-0 w-full h-[90%] -z-10 rounded-xl"
@@ -752,20 +768,22 @@
                 </svg>
 
                 <div
-                  class="p-3 flex items-center justify-center md:justify-end md:ml-6 lg:ml-2 lg:p-0 lg:pt-2 xl:ml-6"
+                  class="p-3 flex items-center justify-center md:justify-end md:pt-1 md:ml-6 lg:ml-2 lg:p-0 xl:ml-6"
                 >
                   <img
                     src="/images/categories/bathrobes.png"
-                    class="w-28"
+                    class="w-14 h-14 md:w-29.5 md:h-29"
                     alt=""
                   />
                 </div>
               </div>
               <div
-                class="md:flex items-start justify-center flex-col md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
+                class="md:flex items-start justify-center flex-col md:gap-1 md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
               >
                 <div class="md:flex items-center justify-center gap-1">
-                  <p class="text-center md:font-bold">حوله تنپوش</p>
+                  <p class="text-center md:font-bold text-sm md:text-[22px]">
+                    حوله تنپوش
+                  </p>
                   <svg
                     class="hidden md:block"
                     width="18"
@@ -792,7 +810,7 @@
             <!-- Category 5 -->
             <div class="relative">
               <div
-                class="bg-light-blue relative z-10 rounded-xl min-h-24 lg:h-27 max-h-30 mb-4 lg:mb-0"
+                class="bg-light-blue relative z-10 rounded-xl md:h-32 lg:h-29 mb-4 lg:mb-0"
               >
                 <svg
                   class="md:hidden absolute left-0 right-0 top-0 w-full h-[90%] -z-10 rounded-xl"
@@ -821,20 +839,22 @@
                 </svg>
 
                 <div
-                  class="p-3 flex items-center justify-center md:justify-end md:ml-6 lg:ml-2 lg:p-0 lg:pt-2 xl:ml-6"
+                  class="p-3 flex items-center justify-center md:justify-end md:ml-8 lg:ml-2 lg:pt-2 xl:ml-6"
                 >
                   <img
                     src="/images/categories/throw-blankets.png"
-                    class="w-20 lg:w-24"
+                    class="w-12 h-12 md:w-24.5 md:h-24.5"
                     alt=""
                   />
                 </div>
               </div>
               <div
-                class="md:flex items-start justify-center flex-col md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
+                class="md:flex items-start justify-center flex-col md:gap-1 md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
               >
                 <div class="md:flex items-center justify-center gap-1">
-                  <p class="text-center md:font-bold">شال مبل</p>
+                  <p class="text-center md:font-bold text-sm md:text-[22px]">
+                    شال مبل
+                  </p>
                   <svg
                     class="hidden md:block"
                     width="18"
@@ -861,7 +881,7 @@
             <!-- Category 6 -->
             <div class="relative">
               <div
-                class="bg-light-blue relative z-10 rounded-xl min-h-24 lg:h-27 max-h-30 mb-4 lg:mb-0"
+                class="bg-light-blue relative z-10 rounded-xl md:h-32 lg:h-29 mb-4 lg:mb-0"
               >
                 <svg
                   class="md:hidden absolute left-0 right-0 top-0 w-full h-[90%] -z-10 rounded-xl"
@@ -890,20 +910,22 @@
                 </svg>
 
                 <div
-                  class="p-3 flex items-center justify-center md:justify-end md:ml-6 lg:ml-2 lg:p-0 lg:pt-2 xl:ml-6"
+                  class="p-3 flex items-center justify-center md:justify-end md:ml-6 lg:ml-2 lg:pt-4 xl:ml-8"
                 >
                   <img
                     src="/images/categories/mattress-protectors.png"
-                    class="w-28"
+                    class="w-16 h-16 md:w-30 md:h-21.5 lg:w-26 lg:h-18 xl:w-30 xl:h-21.5"
                     alt=""
                   />
                 </div>
               </div>
               <div
-                class="md:flex items-start justify-center flex-col md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
+                class="md:flex items-start justify-center flex-col md:gap-1 md:absolute top-1/2 -translate-y-1/2 md:pr-10 z-10 lg:top-1/2"
               >
                 <div class="md:flex items-center justify-center gap-1">
-                  <p class="text-center md:font-bold">محافظ تشک</p>
+                  <p class="text-center md:font-bold text-sm md:text-[22px]">
+                    محافظ تشک
+                  </p>
                   <svg
                     class="hidden md:block"
                     width="18"
@@ -933,7 +955,9 @@
       <!-- Offers and Beds -->
       <section class="mt-15 mb-16">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col justify-between gap-4 xl:flex-row">
+          <div
+            class="flex flex-col justify-between gap-4 xl:flex-row 2xl:justify-center 2xl:gap-6"
+          >
             <div
               class="relative w-full min-h-70 bg-secondary text-white flex flex-col items-center justify-start gap-5 rounded-2xl py-5 px-9 xl:w-[20%] xl:overflow-hidden"
             >
@@ -991,7 +1015,7 @@
             </div>
             <!-- Beds -->
             <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 2xl:gap-12"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 2xl:gap-6"
             >
               <!-- Bed 1 -->
               <div
@@ -1149,7 +1173,7 @@
       <section class="mt-12 lg:mt-18 mb-16">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            class="flex flex-col gap-4 items-center justify-center lg:flex-row 2xl:gap-10"
+            class="flex flex-col gap-4 items-center justify-center lg:flex-row lg:gap-7 2xl:gap-10"
           >
             <a href="#" class="">
               <div class="text-[#2F5B7D] relative">
@@ -1159,10 +1183,12 @@
                 <div
                   class="absolute right-0 top-0 max-[400px]:p-2 p-5 sm:py-7 sm:px-4 xl:py-10 xl:px-8"
                 >
-                  <h3 class="font-bold text-base mb-2">
+                  <h3 class="font-bold text-base mb-2 lg:text-xl">
                     با این بالشت ها میری تو ابرا :)
                   </h3>
-                  <p class="font-normal text-xs">بالشت های طبی آرامیس</p>
+                  <p class="font-normal text-xs lg:text-base">
+                    بالشت های طبی آرامیس
+                  </p>
                 </div>
               </div>
             </a>
@@ -1176,10 +1202,12 @@
                 <div
                   class="absolute right-0 top-0 max-[400px]:p-2 p-5 sm:py-7 sm:px-4 xl:py-10 xl:px-8"
                 >
-                  <h3 class="font-bold text-base mb-2">
+                  <h3 class="font-bold text-base mb-2 lg:text-xl">
                     دیگه نگران خواب راحتت نباش
                   </h3>
-                  <p class="flex items-center gap-1 font-normal text-xs">
+                  <p
+                    class="flex items-center gap-1 font-normal text-xs lg:text-base"
+                  >
                     کالکشن پاییزه آرامیس
                     <svg width="3" height="5" viewBox="0 0 6 10" fill="none">
                       <path
@@ -1560,7 +1588,7 @@
           <div
             class="mt-8 flex flex-col items-center gap-10 md:flex-row-reverse md:justify-between"
           >
-            <div class="flex flex-col justify-center gap-3 max-w-77.5">
+            <div class="flex flex-col justify-center gap-3 lg:w-77.5">
               <svg width="35" height="35" viewBox="0 0 35 35" fill="none">
                 <path
                   d="M26.25 27.5041H25.1417C23.975 27.5041 22.8667 27.9562 22.05 28.7729L19.5563 31.2376C18.4188 32.3605 16.5667 32.3605 15.4292 31.2376L12.9354 28.7729C12.1187 27.9562 10.9958 27.5041 9.84375 27.5041H8.75C6.32917 27.5041 4.375 25.5646 4.375 23.1729V7.26247C4.375 4.87081 6.32917 2.93127 8.75 2.93127H26.25C28.6708 2.93127 30.625 4.87081 30.625 7.26247V23.1729C30.625 25.55 28.6708 27.5041 26.25 27.5041Z"
@@ -1594,7 +1622,7 @@
               </p>
             </div>
             <!--  -->
-            <div class="flex flex-col justify-center gap-3 max-w-77.5">
+            <div class="flex flex-col justify-center gap-3 lg:w-77.5">
               <svg width="35" height="35" viewBox="0 0 35 35" fill="none">
                 <path
                   d="M27.8104 7.21878C33.6 13.0084 33.4979 22.4583 27.5187 28.1312C21.9916 33.3666 13.0229 33.3666 7.48124 28.1312C1.48749 22.4583 1.38538 13.0084 7.18955 7.21878C12.8771 1.51669 22.1229 1.51669 27.8104 7.21878Z"
@@ -1622,7 +1650,7 @@
               </p>
             </div>
             <!--  -->
-            <div class="flex flex-col justify-center gap-3 max-w-77.5">
+            <div class="flex flex-col justify-center gap-3 lg:w-77.5">
               <svg width="35" height="35" viewBox="0 0 35 35" fill="none">
                 <path
                   d="M13.125 27.7083C13.125 28.8021 12.8188 29.8375 12.2792 30.7125C11.2729 32.4042 9.42084 33.5417 7.29168 33.5417C5.16251 33.5417 3.31043 32.4042 2.30418 30.7125C1.7646 29.8375 1.45834 28.8021 1.45834 27.7083C1.45834 24.4854 4.06876 21.875 7.29168 21.875C10.5146 21.875 13.125 24.4854 13.125 27.7083Z"
@@ -1691,9 +1719,11 @@
             </p>
           </div>
           <!-- Blogs -->
-          <div class="grid gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="grid gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
+          >
             <!-- Blog 1 -->
-            <a href="#" class="flex flex-col gap-3">
+            <a href="#" class="flex flex-col gap-3 xl:w-88.5">
               <div>
                 <img
                   src="/images/articles/article-01.jpg"
@@ -1726,7 +1756,7 @@
               </div>
             </a>
             <!-- Blog 2 -->
-            <a href="#" class="flex flex-col gap-3">
+            <a href="#" class="flex flex-col gap-3 xl:w-88.5">
               <div>
                 <img
                   src="/images/articles/article-02.jpg"
@@ -1759,7 +1789,7 @@
               </div>
             </a>
             <!-- Blog 3 -->
-            <a href="#" class="flex flex-col gap-3">
+            <a href="#" class="flex flex-col gap-3 xl:w-88.5">
               <div>
                 <img
                   src="/images/articles/article-03.jpg"
