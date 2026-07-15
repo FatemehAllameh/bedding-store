@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="py-4 sticky top-0 bg-white z-50 md:static">
+      <!-- Announcement Bar -->
+      <div class="announcement-bar hidden md:block mb-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="relative h-11 flex items-center justify-center gap-2 rounded-lg bg-primary p-2"
+          >
+            <p class="text-xs text-white">
+              تخفیف ها شروع شده همین الان خرید کن
+            </p>
+            <a href="#">
+              <svg
+                class="cursor-pointer"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+              >
+                <path
+                  d="M4.75 0.75L0.75 4.75L4.75 8.75M0.75 4.75L12.75 4.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <button
+              class="close-btn absolute left-4 cursor-pointer"
+              type="button"
+            >
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M9.23528 0.750052L0.75 9.23533M9.23528 9.23528L0.75 0.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container relative flex justify-between items-center mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <!-- Hamburger Button -->
+        <button type="button" class="menu-btn">
+          <span class="menu-btn__line menu-btn__line--top"></span>
+          <span class="menu-btn__line menu-btn__line--middle"></span>
+          <span class="menu-btn__line menu-btn__line--bottom"></span>
+        </button>
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-1.5">
+          <div class="relative w-10 h-10">
+            <div class="absolute w-7 h-7 rounded-full bg-[#363636]"></div>
+            <div
+              class="absolute w-6 h-6 rounded-full bg-primary left-0.5 top-2.5"
+            ></div>
+          </div>
+          <p class="font-bold text-[#3C3C3C]">آرامیس</p>
+        </a>
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs hover:text-secondary nav-menu__link--active"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >روتختی ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >تشک ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >بالش ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="text-xs text-light-gray hover:text-secondary"
+                >درباره ما</a
+              >
+            </li>
+            <li class="nav-menu__item md:hidden">
+              <a href="#" class="text-xs text-light-gray hover:text-secondary"
+                >حساب کاربری</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Search Icon -->
+        <svg
+          class="hidden md:flex w-6 h-6 cursor-pointer"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+            stroke="#1F2732"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22 22L20 20"
+            stroke="#1F2732"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <!-- Cart Icon -->
+        <a
+          href="#"
+          class="inline-flex items-center justify-center mr-3 rounded-lg w-10 h-10 bg-primary md:bg-inherit"
+        >
+          <svg
+            class="w-5 h-5 text-white md:text-secondary"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.00001 22H15C19.02 22 19.74 20.39 19.95 18.43L20.7 12.43C20.97 9.99 20.27 8 16 8H8.00001C3.73001 8 3.03001 9.99 3.30001 12.43L4.05001 18.43C4.26001 20.39 4.98001 22 9.00001 22Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.4955 12H15.5045"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.49451 12H8.50349"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <!-- User Icon -->
+        <svg
+          class="hidden md:flex w-5 h-5 mr-3 cursor-pointer"
+          viewBox="0 0 16 20"
+          fill="none"
+        >
+          <path
+            d="M12 5H11C11 6.65685 9.65685 8 8 8V9V10C10.7614 10 13 7.76142 13 5H12ZM8 9V8C6.34315 8 5 6.65685 5 5H4H3C3 7.76142 5.23858 10 8 10V9ZM4 5H5C5 3.34315 6.34315 2 8 2V1V0C5.23858 0 3 2.23858 3 5H4ZM8 1V2C9.65685 2 11 3.34315 11 5H12H13C13 2.23858 10.7614 0 8 0V1ZM15 15.5H14C14 15.8837 13.663 16.5002 12.5025 17.0804C11.4019 17.6308 9.81141 18 8 18V19V20C10.0546 20 11.9641 19.5857 13.397 18.8693C14.77 18.1828 16 17.0493 16 15.5H15ZM8 19V18C6.18859 18 4.5981 17.6308 3.49747 17.0804C2.33702 16.5002 2 15.8837 2 15.5H1H0C0 17.0493 1.22998 18.1828 2.60304 18.8693C4.03591 19.5857 5.94542 20 8 20V19ZM1 15.5H2C2 15.1163 2.33702 14.4998 3.49747 13.9196C4.5981 13.3692 6.18859 13 8 13V12V11C5.94542 11 4.03591 11.4143 2.60304 12.1307C1.22998 12.8172 0 13.9507 0 15.5H1ZM8 12V13C9.81141 13 11.4019 13.3692 12.5025 13.9196C13.663 14.4998 14 15.1163 14 15.5H15H16C16 13.9507 14.77 12.8172 13.397 12.1307C11.9641 11.4143 10.0546 11 8 11V12Z"
+            fill="#373333"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Input Search -->
+    <div
+      class="container relative flex justify-between items-center mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <form
+        action=""
+        class="flex items-center bg-[#F7F7F7] p-2 mt-6 h-12 rounded-lg md:hidden w-full"
+      >
+        <input
+          class="w-full pr-1 pl-1 outline-none"
+          type="text"
+          placeholder="جستجو..."
+        />
+        <button type="submit">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+              stroke="#1F2732"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 22L20 20"
+              stroke="#1F2732"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Main -->
+    <main class="mt-6">
+      <!-- Breadcrumb -->
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="font-normal text-base flex items-center gap-2">
+          <span class="text-[#929292]">صفحه اصلی | </span>
+          <span class="text-[#14151B]">تشک طبی</span>
+        </p>
+      </div>
+      <!-- Products Toolbar -->
+      <section class="mt-4">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Mobile Toolbar -->
+          <div class="text-[#100E0C] text-xs flex items-center gap-2 xl:hidden">
+            <div
+              class="py-2 px-3 cursor-pointer rounded-lg bg-[#F7F7F7] flex items-center justify-center gap-2"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3.59993 1.3999H12.3999C13.1333 1.3999 13.7333 1.9999 13.7333 2.73324V4.1999C13.7333 4.73324 13.3999 5.3999 13.0666 5.73324L10.1999 8.26657C9.79993 8.5999 9.53327 9.26657 9.53327 9.7999V12.6666C9.53327 13.0666 9.2666 13.5999 8.93327 13.7999L7.99994 14.3999C7.13327 14.9332 5.93327 14.3332 5.93327 13.2666V9.73324C5.93327 9.26657 5.6666 8.66657 5.39994 8.33324L2.8666 5.66657C2.53327 5.33324 2.2666 4.73324 2.2666 4.33324V2.7999C2.2666 1.9999 2.8666 1.3999 3.59993 1.3999Z"
+                  stroke="#100E0C"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.28667 1.3999L4 6.66657"
+                  stroke="#191D31"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p>فیلتر ها</p>
+            </div>
+            <!--  -->
+            <div
+              class="py-2 px-3 cursor-pointer rounded-lg bg-[#F7F7F7] flex items-center justify-center gap-2"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M2 4.66675H14"
+                  stroke="#100E0C"
+                  stroke-linecap="round"
+                />
+                <path d="M4 8H12" stroke="#191D31" stroke-linecap="round" />
+                <path
+                  d="M6.66675 11.3333H9.33341"
+                  stroke="#191D31"
+                  stroke-linecap="round"
+                />
+              </svg>
+
+              <p>پرفروش ترین ها</p>
+            </div>
+          </div>
+          <!-- Desktop Toolbar -->
+          <div class="hidden xl:flex items-center justify-between gap-8">
+            <div
+              class="bg-[#FAFAFA] h-14 rounded-xl flex items-center justify-between w-[20%] p-4"
+            >
+              <p class="flex items-center gap-2 text-[#121111] text-base">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M4.49992 1.75H15.4999C16.4166 1.75 17.1666 2.5 17.1666 3.41667V5.25C17.1666 5.91667 16.7499 6.75 16.3333 7.16667L12.7499 10.3333C12.2499 10.75 11.9166 11.5833 11.9166 12.25V15.8333C11.9166 16.3333 11.5833 17 11.1666 17.25L9.99992 18C8.91659 18.6667 7.41658 17.9167 7.41658 16.5833V12.1667C7.41658 11.5833 7.08325 10.8333 6.74992 10.4167L3.58325 7.08333C3.16659 6.66667 2.83325 5.91667 2.83325 5.41667V3.5C2.83325 2.5 3.58325 1.75 4.49992 1.75Z"
+                    stroke="#121111"
+                    stroke-width="1.25"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.10833 1.75L5 8.33333"
+                    stroke="#121111"
+                    stroke-width="1.25"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                فیلتر
+              </p>
+              <!--  -->
+              <p class="flex items-center text-primary text-sm">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                  <path
+                    d="M12.728 21.2132L21.2133 12.728"
+                    stroke="#5EB5F8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.2133 21.2132L12.728 12.7279"
+                    stroke="#5EB5F8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                حذف فیلتر
+              </p>
+            </div>
+            <!-- Sort Toolbar -->
+            <div
+              class="bg-[#FAFAFA] h-14 pt-4 px-4 rounded-xl flex items-center justify-between w-[80%] gap-5 2xl:pl-9.25 2xl:pr-25"
+            >
+              <div class="flex items-start gap-7.75">
+                <p class="text-base text-[#14151B] flex items-center gap-2">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M2.5 5.83325H17.5"
+                      stroke="#14151B"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M5 10H15"
+                      stroke="#14151B"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8.33325 14.1667H11.6666"
+                      stroke="#191D31"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  مرتب سازی :
+                </p>
+                <!-- UL -->
+                <ul class="flex justify-items-center gap-4">
+                  <!-- Sort Item 1 -->
+                  <li
+                    class="sort-item--active flex flex-col items-center gap-2.75 cursor-pointer"
+                  >
+                    <span
+                      class="sort-item__text font-normal text-[#404040] text-[14px] hover:text-primary transition duration-200"
+                      >پربازدیدترین</span
+                    >
+                    <span class="active-line"></span>
+                  </li>
+                  <!-- Line -->
+                  <svg width="2" height="16" viewBox="0 0 2 16" fill="none">
+                    <line
+                      x1="0.75"
+                      y1="0.75"
+                      x2="0.749999"
+                      y2="15.25"
+                      stroke="#DFDFDF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <!-- Sort Item 2 -->
+                  <li
+                    class="flex flex-col items-center gap-2.75 cursor-pointer"
+                  >
+                    <span
+                      class="sort-item__text font-normal text-[#404040] text-[14px] hover:text-primary transition duration-200"
+                      >جدیدترین</span
+                    >
+                    <span class="active-line"></span>
+                  </li>
+                  <!-- Line -->
+                  <svg width="2" height="16" viewBox="0 0 2 16" fill="none">
+                    <line
+                      x1="0.75"
+                      y1="0.75"
+                      x2="0.749999"
+                      y2="15.25"
+                      stroke="#DFDFDF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <!-- Sort Item 3 -->
+                  <li
+                    class="flex flex-col items-center gap-2.75 cursor-pointer"
+                  >
+                    <span
+                      class="sort-item__text font-normal text-[#404040] text-[14px] hover:text-primary transition duration-200"
+                      >پرفروش ترین</span
+                    >
+                    <span class="active-line"></span>
+                  </li>
+                  <!-- Line -->
+                  <svg width="2" height="16" viewBox="0 0 2 16" fill="none">
+                    <line
+                      x1="0.75"
+                      y1="0.75"
+                      x2="0.749999"
+                      y2="15.25"
+                      stroke="#DFDFDF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <!-- Sort Item 4 -->
+                  <li
+                    class="flex flex-col items-center gap-2.75 cursor-pointer"
+                  >
+                    <span
+                      class="sort-item__text font-normal text-[#404040] text-[14px] hover:text-primary transition duration-200"
+                      >ارزان ترین</span
+                    >
+                    <span class="active-line"></span>
+                  </li>
+                  <!-- Line -->
+                  <svg width="2" height="16" viewBox="0 0 2 16" fill="none">
+                    <line
+                      x1="0.75"
+                      y1="0.75"
+                      x2="0.749999"
+                      y2="15.25"
+                      stroke="#DFDFDF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <!-- Sort Item 5 -->
+                  <li
+                    class="flex flex-col items-center gap-2.75 cursor-pointer"
+                  >
+                    <span
+                      class="sort-item__text font-normal text-[#404040] text-[14px] hover:text-primary transition duration-200"
+                      >گران ترین</span
+                    >
+                    <span class="active-line"></span>
+                  </li>
+                  <!-- Line -->
+                  <svg width="2" height="16" viewBox="0 0 2 16" fill="none">
+                    <line
+                      x1="0.75"
+                      y1="0.75"
+                      x2="0.749999"
+                      y2="15.25"
+                      stroke="#DFDFDF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <!-- Sort Item 6 -->
+                  <li
+                    class="flex flex-col items-center gap-2.75 cursor-pointer"
+                  >
+                    <span
+                      class="sort-item__text font-normal text-[#404040] text-[14px] hover:text-primary transition duration-200"
+                      >منتخب</span
+                    >
+                    <span class="active-line"></span>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+              <p class="text-sm text-[#404040] self-start">
+                3150 محصول موجود است
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
