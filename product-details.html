@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="py-4 sticky top-0 bg-white z-50 md:static">
+      <!-- Announcement Bar -->
+      <div class="announcement-bar hidden md:block mb-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="relative h-11 flex items-center justify-center gap-2 rounded-lg bg-primary p-2"
+          >
+            <p class="text-xs text-white">
+              تخفیف ها شروع شده همین الان خرید کن
+            </p>
+            <a href="#">
+              <svg
+                class="cursor-pointer"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+              >
+                <path
+                  d="M4.75 0.75L0.75 4.75L4.75 8.75M0.75 4.75L12.75 4.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <button
+              class="close-btn absolute left-4 cursor-pointer"
+              type="button"
+            >
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path
+                  d="M9.23528 0.750052L0.75 9.23533M9.23528 9.23528L0.75 0.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container relative flex justify-between items-center mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <!-- Hamburger Button -->
+        <button type="button" class="menu-btn">
+          <span class="menu-btn__line menu-btn__line--top"></span>
+          <span class="menu-btn__line menu-btn__line--middle"></span>
+          <span class="menu-btn__line menu-btn__line--bottom"></span>
+        </button>
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-1.5">
+          <div class="relative w-10 h-10">
+            <div class="absolute w-7 h-7 rounded-full bg-[#363636]"></div>
+            <div
+              class="absolute w-6 h-6 rounded-full bg-primary left-0.5 top-2.5"
+            ></div>
+          </div>
+          <p class="font-bold text-[#3C3C3C]">آرامیس</p>
+        </a>
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs hover:text-secondary nav-menu__link--active"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >روتختی ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >تشک ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="#"
+                class="text-xs flex items-center gap-1 text-light-gray hover:text-secondary"
+                >بالش ها
+                <svg class="h-1 w-2.5" viewBox="0 0 13 7" fill="none">
+                  <path
+                    d="M11.31 0.75L6.96333 5.09667C6.45 5.61 5.61 5.61 5.09667 5.09667L0.75 0.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="text-xs text-light-gray hover:text-secondary"
+                >درباره ما</a
+              >
+            </li>
+            <li class="nav-menu__item md:hidden">
+              <a href="#" class="text-xs text-light-gray hover:text-secondary"
+                >حساب کاربری</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Search Icon -->
+        <svg
+          class="hidden md:flex w-6 h-6 cursor-pointer"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+            stroke="#1F2732"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22 22L20 20"
+            stroke="#1F2732"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <!-- Cart Icon -->
+        <a
+          href="#"
+          class="inline-flex items-center justify-center mr-3 rounded-lg w-10 h-10 bg-primary md:bg-inherit"
+        >
+          <svg
+            class="w-5 h-5 text-white md:text-secondary"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.00001 22H15C19.02 22 19.74 20.39 19.95 18.43L20.7 12.43C20.97 9.99 20.27 8 16 8H8.00001C3.73001 8 3.03001 9.99 3.30001 12.43L4.05001 18.43C4.26001 20.39 4.98001 22 9.00001 22Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.4955 12H15.5045"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.49451 12H8.50349"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <!-- User Icon -->
+        <svg
+          class="hidden md:flex w-5 h-5 mr-3 cursor-pointer"
+          viewBox="0 0 16 20"
+          fill="none"
+        >
+          <path
+            d="M12 5H11C11 6.65685 9.65685 8 8 8V9V10C10.7614 10 13 7.76142 13 5H12ZM8 9V8C6.34315 8 5 6.65685 5 5H4H3C3 7.76142 5.23858 10 8 10V9ZM4 5H5C5 3.34315 6.34315 2 8 2V1V0C5.23858 0 3 2.23858 3 5H4ZM8 1V2C9.65685 2 11 3.34315 11 5H12H13C13 2.23858 10.7614 0 8 0V1ZM15 15.5H14C14 15.8837 13.663 16.5002 12.5025 17.0804C11.4019 17.6308 9.81141 18 8 18V19V20C10.0546 20 11.9641 19.5857 13.397 18.8693C14.77 18.1828 16 17.0493 16 15.5H15ZM8 19V18C6.18859 18 4.5981 17.6308 3.49747 17.0804C2.33702 16.5002 2 15.8837 2 15.5H1H0C0 17.0493 1.22998 18.1828 2.60304 18.8693C4.03591 19.5857 5.94542 20 8 20V19ZM1 15.5H2C2 15.1163 2.33702 14.4998 3.49747 13.9196C4.5981 13.3692 6.18859 13 8 13V12V11C5.94542 11 4.03591 11.4143 2.60304 12.1307C1.22998 12.8172 0 13.9507 0 15.5H1ZM8 12V13C9.81141 13 11.4019 13.3692 12.5025 13.9196C13.663 14.4998 14 15.1163 14 15.5H15H16C16 13.9507 14.77 12.8172 13.397 12.1307C11.9641 11.4143 10.0546 11 8 11V12Z"
+            fill="#373333"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Input Search -->
+    <div
+      class="container relative flex justify-between items-center mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <form
+        action=""
+        class="flex items-center bg-[#F7F7F7] p-2 mt-6 h-12 rounded-lg md:hidden w-full"
+      >
+        <input
+          class="w-full pr-1 pl-1 outline-none"
+          type="text"
+          placeholder="جستجو..."
+        />
+        <button type="submit">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+              stroke="#1F2732"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 22L20 20"
+              stroke="#1F2732"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Main -->
+    <main class="mt-6">
+      <!-- Breadcrumb -->
+      <div class="container mx-auto px-6 sm:px-6 lg:px-8 xl:px-13.5">
+        <p class="font-normal text-base flex items-center flex-wrap gap-2">
+          <span class="text-[#929292]">صفحه اصلی | </span>
+          <span class="text-[#929292]">تشک طبی |</span>
+          <span class="text-[#14151B]">تشک طبی بدون فنر پارادوکس </span>
+        </p>
+      </div>
+      <!-- Product Details -->
+      <section class="mt-4.25 2xl:mt-7.25">
+        <div class="container mx-auto px-6 sm:px-6 lg:px-8 xl:px-12.5">
+          <!-- responsive picture & datail (xl) -->
+          <div
+            class="xl:w-full xl:flex justify-between items-center gap-6 2xl:justify-start 2xl:items-center"
+          >
+            <!-- responsive picture -->
+            <div
+              class="md:flex md:w-full items-center justify-center gap-6 md:mb-6 xl:contents 2xl:flex 2xl:w-auto"
+            >
+              <!-- another pictures Desktop -->
+              <div
+                class="hidden md:flex flex-col items-center gap-6 2xl:w-21.75"
+              >
+                <!-- chevron up -->
+                <div
+                  class="bg-light-blue rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#DCEFFC] transition duration-200"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                      stroke="#5EB5F8"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <!-- pic 1 -->
+                <div class="w-22 h-22 rounded-lg overflow-hidden">
+                  <img
+                    src="/images/products/bed-01.jpg"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <!-- pic 2 -->
+                <div
+                  class="w-22 h-22 rounded-lg overflow-hidden border-[2.5px] border-primary"
+                >
+                  <img
+                    src="/images/products/bed-02.jpg"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <!-- pic 3 -->
+                <div class="w-22 h-22 rounded-lg overflow-hidden">
+                  <img
+                    src="/images/products/bed-02.jpg"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <!-- pic 4 -->
+                <div class="w-22 h-22 rounded-lg overflow-hidden">
+                  <img
+                    src="/images/products/bed-02.jpg"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <!-- chevron down -->
+                <div
+                  class="bg-light-blue rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#DCEFFC] transition duration-200"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                      stroke="#5EB5F8"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- product picture -->
+              <div
+                class="relative md:w-[70%] lg:w-[60%] xl:w-[40%] 2xl:w-133.25 2xl:h-124.5"
+              >
+                <img
+                  src="/images/products/bed-02.jpg"
+                  class="w-full h-full rounded-3xl"
+                  alt=""
+                />
+                <!-- icons -->
+                <div class="flex flex-col gap-2 absolute top-4 right-4">
+                  <!-- heart -->
+                  <div
+                    class="w-8 h-8 bg-[#FAFAFA] rounded-full flex items-center justify-center"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M8.4135 13.8733C8.18683 13.9533 7.8135 13.9533 7.58683 13.8733C5.6535 13.2133 1.3335 10.46 1.3335 5.79332C1.3335 3.73332 2.9935 2.06665 5.04016 2.06665C6.2535 2.06665 7.32683 2.65332 8.00016 3.55998C8.6735 2.65332 9.7535 2.06665 10.9602 2.06665C13.0068 2.06665 14.6668 3.73332 14.6668 5.79332C14.6668 10.46 10.3468 13.2133 8.4135 13.8733Z"
+                        stroke="#100E0C"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <!-- notification bing -->
+                  <div
+                    class="w-8 h-8 bg-[#FAFAFA] rounded-full flex items-center justify-center"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M10.2198 12.5469C10.2198 13.7669 9.21979 14.7669 7.99979 14.7669C7.39312 14.7669 6.83312 14.5135 6.43312 14.1135C6.03312 13.7135 5.77979 13.1535 5.77979 12.5469"
+                        stroke="#5EB5F8"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M8 4.2937V6.5137"
+                        stroke="#5EB5F8"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M8.01375 1.33325C5.56042 1.33325 3.57375 3.31992 3.57375 5.77325V7.17325C3.57375 7.62659 3.38709 8.30659 3.15375 8.69325L2.30709 10.1066C1.78709 10.9799 2.14709 11.9533 3.10709 12.2733C6.29375 13.3333 9.74042 13.3333 12.9271 12.2733C13.8271 11.9733 14.2138 10.9199 13.7271 10.1066L12.8804 8.69325C12.6471 8.30659 12.4604 7.61992 12.4604 7.17325V5.77325C12.4538 3.33325 10.4538 1.33325 8.01375 1.33325Z"
+                        stroke="#100E0C"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <!-- share -->
+                  <div
+                    class="w-8 h-8 bg-[#FAFAFA] rounded-full flex items-center justify-center"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                      <path
+                        d="M9.04688 3.29297C10.1135 4.0343 10.8495 5.21297 10.9989 6.57297"
+                        stroke="#5EB5F8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.85938 6.59641C1.99804 5.24174 2.72338 4.06307 3.77938 3.31641"
+                        stroke="#5EB5F8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.36719 11.168C4.98585 11.4826 5.68985 11.6586 6.43119 11.6586C7.14585 11.6586 7.81785 11.4986 8.42052 11.2053"
+                        stroke="#5EB5F8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.43189 4.10596C7.25074 4.10596 7.91455 3.44215 7.91455 2.62329C7.91455 1.80444 7.25074 1.14062 6.43189 1.14062C5.61303 1.14062 4.94922 1.80444 4.94922 2.62329C4.94922 3.44215 5.61303 4.10596 6.43189 4.10596Z"
+                        stroke="#100E0C"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.57642 10.6255C3.39527 10.6255 4.05908 9.96168 4.05908 9.14282C4.05908 8.32397 3.39527 7.66016 2.57642 7.66016C1.75756 7.66016 1.09375 8.32397 1.09375 9.14282C1.09375 9.96168 1.75756 10.6255 2.57642 10.6255Z"
+                        stroke="#100E0C"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.2249 10.6255C11.0437 10.6255 11.7075 9.96168 11.7075 9.14282C11.7075 8.32397 11.0437 7.66016 10.2249 7.66016C9.406 7.66016 8.74219 8.32397 8.74219 9.14282C8.74219 9.96168 9.406 10.6255 10.2249 10.6255Z"
+                        stroke="#100E0C"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <!-- tag -->
+                <div
+                  class="hidden 2xl:flex bg-primary text-white rounded-sm w-18 h-8 items-center justify-center absolute top-4 left-4"
+                >
+                  جدید
+                </div>
+              </div>
+            </div>
+            <!-- another pictures Mobile -->
+            <div
+              class="w-full flex md:hidden items-center justify-between gap-4.5 mt-4.5 pb-5 border-b border-light-blue mb-4"
+            >
+              <!-- pic 1 -->
+              <div
+                class="w-17.5 h-17.5 border-[2.25px] border-primary rounded-[9px] overflow-hidden"
+              >
+                <img
+                  src="/images/products/bed-02.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+              <!-- pic 2 -->
+              <div class="w-17.5 h-17.5 rounded-[9px] overflow-hidden">
+                <img
+                  src="/images/products/bed-02.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+              <!-- pic 3 -->
+              <div class="w-17.5 h-17.5 rounded-[9px] overflow-hidden">
+                <img
+                  src="/images/products/bed-02.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+              <!-- ... -->
+              <div
+                class="w-17.5 h-17.5 rounded-[9px] bg-light-blue overflow-hidden flex items-center justify-center"
+              >
+                <svg width="26" height="6" viewBox="0 0 26 6" fill="none">
+                  <circle cx="3" cy="3" r="3" fill="#5EB5F8" />
+                  <circle cx="13" cy="3" r="3" fill="#5EB5F8" />
+                  <circle cx="23" cy="3" r="3" fill="#5EB5F8" />
+                </svg>
+              </div>
+            </div>
+            <!-- details -->
+            <div class="xl:w-[60%] 2xl:w-167 2xl:h-122.25">
+              <h2
+                class="font-bold text-lg text-[#100E0C] mb-4 2xl:font-modam 2xl:font-semibold 2xl:text-[32px]"
+              >
+                تشک طبی بدون فنر پارادوکس کد 321456
+              </h2>
+              <!--  -->
+              <div
+                class="flex justify-between items-start mb-4 md:items-center"
+              >
+                <div class="flex flex-col gap-2 md:flex-row md:gap-5.5">
+                  <p class="flex items-center gap-2">
+                    <span class="text-xs text-[#929292]">برچسب :</span>
+                    <span class="text-xs text-primary">طبی</span>
+                  </p>
+                  <!--  -->
+                  <p class="flex items-center gap-1">
+                    <span class="text-xs text-[#929292]">شناسه کالا : </span>
+                    <span class="text-xs text-[#14151B]">1245987</span>
+                  </p>
+                </div>
+                <!--  -->
+                <div>
+                  <div class="hidden md:flex items-center gap-2">
+                    <p class="text-[#404040] text-sm">7 دیدگاه</p>
+                    <svg width="1" height="16" viewBox="0 0 1 16" fill="none">
+                      <line
+                        x1="0.5"
+                        y1="2.18557e-08"
+                        x2="0.499999"
+                        y2="16"
+                        stroke="#ADADAD"
+                      />
+                    </svg>
+                    <p class="text-[#404040] text-sm">امتیاز 4.5</p>
+                    <div
+                      class="w-10 h-10 bg-[#FBF0E0] rounded-full flex items-center justify-center"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+                          fill="#FF9F0E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="flex items-center gap-4 md:hidden">
+                    <p class="text-xs text-[#404040] flex items-center gap-4">
+                      ضمانت اصالت و کیفیت کالا
+                    </p>
+                    <div>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.4502 3.43337L10.8668 1.7167C10.3918 1.5417 9.61683 1.5417 9.14183 1.7167L4.5585 3.43337C3.67516 3.7667 2.9585 4.80003 2.9585 5.7417V12.4917C2.9585 13.1667 3.40016 14.0584 3.94183 14.4584L8.52516 17.8834C9.3335 18.4917 10.6585 18.4917 11.4668 17.8834L16.0502 14.4584C16.5918 14.05 17.0335 13.1667 17.0335 12.4917V5.7417C17.0418 4.80003 16.3252 3.7667 15.4502 3.43337ZM12.9002 8.10003L9.31683 11.6834C9.19183 11.8084 9.0335 11.8667 8.87516 11.8667C8.71683 11.8667 8.5585 11.8084 8.4335 11.6834L7.10016 10.3334C6.8585 10.0917 6.8585 9.6917 7.10016 9.45003C7.34183 9.20837 7.74183 9.20837 7.9835 9.45003L8.8835 10.35L12.0252 7.20837C12.2668 6.9667 12.6668 6.9667 12.9085 7.20837C13.1502 7.45003 13.1502 7.85837 12.9002 8.10003Z"
+                          fill="#6691FF"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product feature -->
+
+              <!-- title -->
+              <div class="md:flex items-end justify-between">
+                <h3
+                  class="text-base text-[#14151B] flex items-center gap-2 mb-3"
+                >
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <rect width="8" height="8" rx="3" fill="#5EB5F8" />
+                  </svg>
+
+                  ویژگی های محصول
+                </h3>
+                <!--  -->
+                <div class="hidden md:flex items-center gap-2">
+                  <p class="text-[#404040] text-sm">ضمانت اصالت و کیفیت کالا</p>
+                  <div
+                    class="bg-[#6691FF1A] w-10 h-10 rounded-full flex items-center justify-center"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M15.4499 3.43337L10.8666 1.7167C10.3916 1.5417 9.61659 1.5417 9.14159 1.7167L4.55825 3.43337C3.67492 3.7667 2.95825 4.80003 2.95825 5.7417V12.4917C2.95825 13.1667 3.39992 14.0584 3.94159 14.4584L8.52492 17.8834C9.33325 18.4917 10.6583 18.4917 11.4666 17.8834L16.0499 14.4584C16.5916 14.05 17.0333 13.1667 17.0333 12.4917V5.7417C17.0416 4.80003 16.3249 3.7667 15.4499 3.43337ZM12.8999 8.10003L9.31659 11.6834C9.19159 11.8084 9.03325 11.8667 8.87492 11.8667C8.71658 11.8667 8.55825 11.8084 8.43325 11.6834L7.09992 10.3334C6.85825 10.0917 6.85825 9.6917 7.09992 9.45003C7.34159 9.20837 7.74158 9.20837 7.98325 9.45003L8.88325 10.35L12.0249 7.20837C12.2666 6.9667 12.6666 6.9667 12.9083 7.20837C13.1499 7.45003 13.1499 7.85837 12.8999 8.10003Z"
+                        fill="#6691FF"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- features -->
+              <div class="relative flex flex-col gap-4 mb-6">
+                <svg
+                  class="absolute top-0.5 bottom-0 right-1 -z-10"
+                  width="1"
+                  height="73"
+                  viewBox="0 0 1 73"
+                  fill="none"
+                >
+                  <path
+                    d="M1 0.5C1 0.223858 0.776142 1.20706e-08 0.5 0C0.223858 -1.20706e-08 1.20706e-08 0.223858 0 0.5L1 0.5ZM-8.74228e-08 2.5C-9.94933e-08 2.77614 0.223858 3 0.5 3C0.776142 3 1 2.77614 1 2.5L-8.74228e-08 2.5ZM1 6.5C1 6.22386 0.776142 6 0.5 6C0.223857 6 -2.50198e-07 6.22386 -2.62268e-07 6.5L1 6.5ZM-4.37114e-07 10.5C-4.49184e-07 10.7761 0.223857 11 0.5 11C0.776142 11 1 10.7761 1 10.5L-4.37114e-07 10.5ZM0.999999 14.5C0.999999 14.2239 0.776142 14 0.499999 14C0.223857 14 -5.99889e-07 14.2239 -6.11959e-07 14.5L0.999999 14.5ZM-7.86805e-07 18.5C-7.98875e-07 18.7761 0.223857 19 0.499999 19C0.776142 19 0.999999 18.7761 0.999999 18.5L-7.86805e-07 18.5ZM0.999999 22.5C0.999999 22.2239 0.776141 22 0.499999 22C0.223857 22 -9.4958e-07 22.2239 -9.6165e-07 22.5L0.999999 22.5ZM-1.1365e-06 26.5C-1.14857e-06 26.7761 0.223856 27 0.499999 27C0.776141 27 0.999999 26.7761 0.999999 26.5L-1.1365e-06 26.5ZM0.999999 30.5C0.999999 30.2239 0.776141 30 0.499999 30C0.223856 30 -1.29927e-06 30.2239 -1.31134e-06 30.5L0.999999 30.5ZM-1.48619e-06 34.5C-1.49826e-06 34.7761 0.223856 35 0.499998 35C0.776141 35 0.999999 34.7761 0.999999 34.5L-1.48619e-06 34.5ZM0.999998 38.5C0.999998 38.2239 0.776141 38 0.499998 38C0.223856 38 -1.64896e-06 38.2239 -1.66103e-06 38.5L0.999998 38.5ZM-1.83588e-06 42.5C-1.84795e-06 42.7761 0.223856 43 0.499998 43C0.776141 43 0.999998 42.7761 0.999998 42.5L-1.83588e-06 42.5ZM0.999998 46.5C0.999998 46.2239 0.77614 46 0.499998 46C0.223856 46 -1.99865e-06 46.2239 -2.01072e-06 46.5L0.999998 46.5ZM-2.18557e-06 50.5C-2.19764e-06 50.7761 0.223855 51 0.499998 51C0.77614 51 0.999998 50.7761 0.999998 50.5L-2.18557e-06 50.5ZM0.999998 54.5C0.999998 54.2239 0.77614 54 0.499998 54C0.223855 54 -2.34834e-06 54.2239 -2.36041e-06 54.5L0.999998 54.5ZM-2.53526e-06 58.5C-2.54733e-06 58.7761 0.223855 59 0.499997 59C0.77614 59 0.999997 58.7761 0.999997 58.5L-2.53526e-06 58.5ZM0.999997 62.5C0.999997 62.2239 0.77614 62 0.499997 62C0.223855 62 -2.69804e-06 62.2239 -2.71011e-06 62.5L0.999997 62.5ZM-2.88495e-06 66.5C-2.89702e-06 66.7761 0.223855 67 0.499997 67C0.776139 67 0.999997 66.7761 0.999997 66.5L-2.88495e-06 66.5ZM0.999997 70.5C0.999997 70.2239 0.776139 70 0.499997 70C0.223855 70 -3.04773e-06 70.2239 -3.0598e-06 70.5L0.999997 70.5ZM0 0.5L-8.74228e-08 2.5L1 2.5L1 0.5L0 0.5ZM-2.62268e-07 6.5L-4.37114e-07 10.5L1 10.5L1 6.5L-2.62268e-07 6.5ZM-6.11959e-07 14.5L-7.86805e-07 18.5L0.999999 18.5L0.999999 14.5L-6.11959e-07 14.5ZM-9.6165e-07 22.5L-1.1365e-06 26.5L0.999999 26.5L0.999999 22.5L-9.6165e-07 22.5ZM-1.31134e-06 30.5L-1.48619e-06 34.5L0.999999 34.5L0.999999 30.5L-1.31134e-06 30.5ZM-1.66103e-06 38.5L-1.83588e-06 42.5L0.999998 42.5L0.999998 38.5L-1.66103e-06 38.5ZM-2.01072e-06 46.5L-2.18557e-06 50.5L0.999998 50.5L0.999998 46.5L-2.01072e-06 46.5ZM-2.36041e-06 54.5L-2.53526e-06 58.5L0.999997 58.5L0.999998 54.5L-2.36041e-06 54.5ZM-2.71011e-06 62.5L-2.88495e-06 66.5L0.999997 66.5L0.999997 62.5L-2.71011e-06 62.5ZM-3.0598e-06 70.5L-3.14722e-06 72.5L0.999997 72.5L0.999997 70.5L-3.0598e-06 70.5Z"
+                    fill="#EDEDED"
+                  />
+                </svg>
+                <!--  -->
+                <div class="flex items-center gap-2">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <rect width="8" height="8" rx="3" fill="#ADADAD" />
+                  </svg>
+                  <p class="text-xs text-[#606060]">جنس : ژاکارد</p>
+                </div>
+                <!--  -->
+                <div class="flex items-center gap-2">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <rect width="8" height="8" rx="3" fill="#DFDFDF" />
+                  </svg>
+                  <p class="text-xs text-[#606060]">
+                    الیاف داخلی : اسفنج ترموباند
+                  </p>
+                </div>
+                <!--  -->
+                <div class="flex items-center gap-2">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <rect width="8" height="8" rx="3" fill="#DFDFDF" />
+                  </svg>
+                  <p class="text-xs text-[#606060]">اندازه : یک نفره</p>
+                </div>
+              </div>
+              <!-- choose color -->
+              <!-- title -->
+              <h3 class="text-base text-[#14151B] flex items-center gap-2 mb-3">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                  <rect width="8" height="8" rx="3" fill="#5EB5F8" />
+                </svg>
+                انتخاب رنگ
+              </h3>
+              <!-- colors -->
+              <div class="flex items-center gap-4 mb-7.25 2xl:mb-16.75">
+                <!-- color 1 -->
+                <div
+                  class="w-22.5 h-9 border border-primary rounded-3xl flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <div class="w-5 h-5 rounded-md bg-[#6691FF]"></div>
+                  <p class="font-normal text-[#100E0C] text-sm">آبی</p>
+                </div>
+                <!-- color 2 -->
+                <div
+                  class="w-22.5 h-9 bg-[#FAFAFA] rounded-3xl flex items-center justify-center gap-2 cursor-pointer border border-[#FAFAFA] hover:border-[#F29665] transition duration-200"
+                >
+                  <div class="w-5 h-5 rounded-md bg-[#F29665]"></div>
+                  <p class="font-normal text-[#100E0C] text-sm">نارنجی</p>
+                </div>
+                <!-- color 3 -->
+                <div
+                  class="w-22.5 h-9 bg-[#FAFAFA] rounded-3xl flex items-center justify-center gap-2 cursor-pointer border border-[#FAFAFA] hover:border-[#BAE399] transition duration-200"
+                >
+                  <div class="w-5 h-5 rounded-md bg-[#BAE399]"></div>
+                  <p class="font-normal text-[#100E0C] text-sm">سبز</p>
+                </div>
+              </div>
+              <!-- Purchase Actions -->
+              <div
+                class="flex flex-col gap-[21.73px] md:flex-row-reverse 2xl:gap-7.5"
+              >
+                <!-- quantity selector -->
+                <div class="flex items-center gap-1">
+                  <!-- + -->
+                  <div
+                    class="bg-[#F6F6F6] w-9.5 h-9.5 rounded-lg flex items-center justify-center cursor-pointer"
+                  >
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                      <path
+                        d="M4.1001 8.19995H12.3001"
+                        stroke="#100E0C"
+                        stroke-width="1.025"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.2002 12.3V4.09998"
+                        stroke="#100E0C"
+                        stroke-width="1.025"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <!-- quantity -->
+                  <div
+                    class="bg-[#FAFAFA] w-9.5 h-9.5 rounded-lg flex items-center justify-center"
+                  >
+                    <p class="font-normal text-[16.4px] text-[#100E0C]">5</p>
+                  </div>
+                  <!-- - -->
+                  <div
+                    class="bg-[#F6F6F6] w-9.5 h-9.5 rounded-lg flex items-center justify-center cursor-pointer"
+                  >
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                      <path
+                        d="M4.1001 8.19995H12.3001"
+                        stroke="#100E0C"
+                        stroke-width="1.025"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <!-- add to cart button -->
+                <div
+                  class="w-full h-10.75 2xl:h-14.5 bg-primary text-white rounded-lg flex items-center justify-center gap-3 cursor-pointer hover:bg-[#3FA4F5] transition duration-200"
+                >
+                  <p class="text-[13.44px]">افزودن به سبد خرید</p>
+                  <svg width="1" height="20" viewBox="0 0 1 20" fill="none">
+                    <line
+                      x1="0.373362"
+                      y1="1.63202e-08"
+                      x2="0.373362"
+                      y2="19.4148"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="0.746725"
+                    />
+                  </svg>
+                  <p class="text-[13.44px]">۷,۵۰۰,۰۰۰ تومان</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
