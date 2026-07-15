@@ -93,3 +93,14 @@ body {
 .sort-item--active .active-line {
   @apply block bg-primary w-[49px] h-[4px] rounded-t-[32px]
 }
+
+/* Scroll Box */
+.scroll-box::-webkit-scrollbar {
+  @apply w-2;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+  @apply bg-[#C4C4C4] rounded-4xl;
+}
+.scroll-box::-webkit-scrollbar-track {
+  @apply bg-[#FFFFFF];
+}
