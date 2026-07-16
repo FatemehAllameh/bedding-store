@@ -354,7 +354,7 @@
                 class="relative md:w-[70%] lg:w-[60%] xl:w-[40%] 2xl:w-133.25 2xl:h-124.5"
               >
                 <img
-                  src="/images/products/bed-02.jpg"
+                  src="/images/products/bed-04.jpg"
                   class="w-full h-full rounded-3xl"
                   alt=""
                 />
@@ -443,7 +443,7 @@
                 </div>
                 <!-- tag -->
                 <div
-                  class="hidden 2xl:flex bg-primary text-white rounded-sm w-18 h-8 items-center justify-center absolute top-4 left-4"
+                  class="hidden 2xl:flex bg-primary text-white rounded-sm w-18 h-8 items-center justify-center absolute top-4n left-4"
                 >
                   جدید
                 </div>
@@ -515,7 +515,9 @@
                 <!--  -->
                 <div>
                   <div class="hidden md:flex items-center gap-2">
-                    <p class="text-[#404040] text-sm">7 دیدگاه</p>
+                    <p class="text-[#404040] text-sm">
+                      <span class="font-sans">7</span> دیدگاه
+                    </p>
                     <svg width="1" height="16" viewBox="0 0 1 16" fill="none">
                       <line
                         x1="0.5"
@@ -525,7 +527,9 @@
                         stroke="#ADADAD"
                       />
                     </svg>
-                    <p class="text-[#404040] text-sm">امتیاز 4.5</p>
+                    <p class="text-[#404040] text-sm">
+                      امتیاز <span class="font-sans">4.5</span>
+                    </p>
                     <div
                       class="w-10 h-10 bg-[#FBF0E0] rounded-full flex items-center justify-center"
                     >
@@ -642,21 +646,24 @@
               <div class="flex items-center gap-4 mb-7.25 2xl:mb-16.75">
                 <!-- color 1 -->
                 <div
-                  class="w-22.5 h-9 border border-primary rounded-3xl flex items-center justify-center gap-2 cursor-pointer"
+                  data-color="#5eb5f8"
+                  class="color-btn w-22.5 h-9 border border-primary rounded-3xl flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <div class="w-5 h-5 rounded-md bg-[#6691FF]"></div>
                   <p class="font-normal text-[#100E0C] text-sm">آبی</p>
                 </div>
                 <!-- color 2 -->
                 <div
-                  class="w-22.5 h-9 bg-[#FAFAFA] rounded-3xl flex items-center justify-center gap-2 cursor-pointer border border-[#FAFAFA] hover:border-[#F29665] transition duration-200"
+                  data-color="#F29665"
+                  class="color-btn w-22.5 h-9 bg-[#FAFAFA] rounded-3xl flex items-center justify-center gap-2 cursor-pointer border border-[#FAFAFA] hover:border-[#F29665] transition duration-200"
                 >
                   <div class="w-5 h-5 rounded-md bg-[#F29665]"></div>
                   <p class="font-normal text-[#100E0C] text-sm">نارنجی</p>
                 </div>
                 <!-- color 3 -->
                 <div
-                  class="w-22.5 h-9 bg-[#FAFAFA] rounded-3xl flex items-center justify-center gap-2 cursor-pointer border border-[#FAFAFA] hover:border-[#BAE399] transition duration-200"
+                  data-color="#BAE399"
+                  class="color-btn w-22.5 h-9 bg-[#FAFAFA] rounded-3xl flex items-center justify-center gap-2 cursor-pointer border border-[#FAFAFA] hover:border-[#BAE399] transition duration-200"
                 >
                   <div class="w-5 h-5 rounded-md bg-[#BAE399]"></div>
                   <p class="font-normal text-[#100E0C] text-sm">سبز</p>
@@ -670,7 +677,7 @@
                 <div class="flex items-center gap-1">
                   <!-- + -->
                   <div
-                    class="bg-[#F6F6F6] w-9.5 h-9.5 rounded-lg flex items-center justify-center cursor-pointer"
+                    class="add-btn bg-[#F6F6F6] w-9.5 h-9.5 rounded-lg flex items-center justify-center cursor-pointer"
                   >
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
                       <path
@@ -693,11 +700,15 @@
                   <div
                     class="bg-[#FAFAFA] w-9.5 h-9.5 rounded-lg flex items-center justify-center"
                   >
-                    <p class="font-normal text-[16.4px] text-[#100E0C]">5</p>
+                    <p
+                      class="quntity-text font-normal text-[16.4px] text-[#100E0C]"
+                    >
+                      1
+                    </p>
                   </div>
                   <!-- - -->
                   <div
-                    class="bg-[#F6F6F6] w-9.5 h-9.5 rounded-lg flex items-center justify-center cursor-pointer"
+                    class="reduce-btn bg-[#F6F6F6] w-9.5 h-9.5 rounded-lg flex items-center justify-center cursor-pointer"
                   >
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
                       <path

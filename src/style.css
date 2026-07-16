@@ -8,7 +8,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  body {
+    .home-page {
     background-image: repeating-linear-gradient(
       to right,
       #fbfbfb 0,
@@ -87,11 +87,11 @@ body {
 /*--------------------*/
 
 .sort-item--active .sort-item__text {
-  @apply text-primary
+  @apply text-primary;
 }
 
 .sort-item--active .active-line {
-  @apply block bg-primary w-[49px] h-[4px] rounded-t-[32px]
+  @apply block bg-primary w-[49px] h-[4px] rounded-t-[32px];
 }
 
 /* Scroll Box */
@@ -103,4 +103,16 @@ body {
 }
 .scroll-box::-webkit-scrollbar-track {
   @apply bg-[#FFFFFF];
+}
+
+/* chevron toggle */
+.chevron-toggle {
+  @apply transition duration-200;
+}
+.chevron-toggle.rotate {
+  @apply rotate-180;
+}
+
+.filter-list.open {
+  @apply block;
 }

@@ -535,10 +535,16 @@
               <!-- Price Range -->
               <div class="p-4 bg-[#FAFAFA] rounded-xl mb-4">
                 <p
-                  class="text-sm text-[#121111] flex items-center justify-between mb-6"
+                  class="filter-title text-sm text-[#121111] flex items-center justify-between mb-6"
                 >
                   بازه قیمتی
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <svg
+                    class="chevron-toggle"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
                     <path
                       d="M8.46997 13.3601L12 9.84011L15.53 13.3601"
                       stroke="#121111"
@@ -548,7 +554,7 @@
                     />
                   </svg>
                 </p>
-                <div class="flex flex-col items-center">
+                <div class="filter-list hidden flex-col items-center">
                   <!-- Range Bar -->
                   <div class="w-full h-3 relative mb-1.5">
                     <div
@@ -643,10 +649,16 @@
               <!-- Categories -->
               <div class="p-4 bg-[#FAFAFA] rounded-xl mb-4">
                 <p
-                  class="text-sm text-[#121111] flex items-center justify-between mb-3.75"
+                  class="filter-title text-sm text-[#121111] flex items-center justify-between mb-3.75"
                 >
                   دسته بندی
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <svg
+                    class="chevron-toggle"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
                     <path
                       d="M8.46997 13.3601L12 9.84011L15.53 13.3601"
                       stroke="#121111"
@@ -656,120 +668,141 @@
                     />
                   </svg>
                 </p>
-                <!-- search input -->
-                <form
-                  action=""
-                  class="flex items-center bg-[#FFFFFF] border border-[#FFF0F7] p-2.5 h-10.5 rounded-lg w-full mb-6"
-                >
-                  <input
-                    class="w-full pr-1 pl-1 outline-none font-normal text-xs"
-                    type="text"
-                    placeholder="جستجو دسته بندی "
-                  />
-                  <button type="submit">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path
-                        d="M9.58341 17.5C13.9557 17.5 17.5001 13.9555 17.5001 9.58329C17.5001 5.21104 13.9557 1.66663 9.58341 1.66663C5.21116 1.66663 1.66675 5.21104 1.66675 9.58329C1.66675 13.9555 5.21116 17.5 9.58341 17.5Z"
-                        stroke="#121111"
-                        stroke-width="1.25"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                <div class="filter-list hidden">
+                  <!-- search input -->
+                  <form
+                    action=""
+                    class="flex items-center bg-[#FFFFFF] border border-[#FFF0F7] p-2.5 h-10.5 rounded-lg w-full mb-6"
+                  >
+                    <input
+                      class="w-full pr-1 pl-1 outline-none font-normal text-xs"
+                      type="text"
+                      placeholder="جستجو دسته بندی "
+                    />
+                    <button type="submit">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M9.58341 17.5C13.9557 17.5 17.5001 13.9555 17.5001 9.58329C17.5001 5.21104 13.9557 1.66663 9.58341 1.66663C5.21116 1.66663 1.66675 5.21104 1.66675 9.58329C1.66675 13.9555 5.21116 17.5 9.58341 17.5Z"
+                          stroke="#121111"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.3334 18.3333L16.6667 16.6666"
+                          stroke="#868686"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </form>
+                  <!-- checkboxes list -->
+                  <div
+                    class="scroll-box flex flex-col gap-4 h-54 overflow-y-scroll"
+                  >
+                    <!-- check 1 -->
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" id="bedspread" class="peer" />
+                      <label
+                        for="bedspread"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >رو بالشتی</label
+                      >
+                    </div>
+                    <!-- check 2 -->
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" id="pillowcase" class="peer" />
+                      <label
+                        for="pillowcase"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >روتختی</label
+                      >
+                    </div>
+                    <!-- check 3 -->
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" id="pillow" class="peer" />
+                      <label
+                        for="pillow"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >بالشت</label
+                      >
+                    </div>
+                    <!-- check 4 -->
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" id="mattress" class="peer" />
+                      <label
+                        for="mattress"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >تشک</label
+                      >
+                    </div>
+                    <!-- check 5 -->
+                    <div class="flex items-center gap-2">
+                      <input
+                        type="checkbox"
+                        id="orthopedic-mattress"
+                        class="peer"
                       />
-                      <path
-                        d="M18.3334 18.3333L16.6667 16.6666"
-                        stroke="#868686"
-                        stroke-width="1.25"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                      <label
+                        for="orthopedic-mattress"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >تشک طبی</label
+                      >
+                    </div>
+                    <!-- check 6 -->
+                    <div class="flex items-center gap-2">
+                      <input
+                        type="checkbox"
+                        id="orthopedic-pillow"
+                        class="peer"
                       />
-                    </svg>
-                  </button>
-                </form>
-                <!-- checkboxes list -->
-                <div
-                  class="scroll-box flex flex-col gap-4 h-54 overflow-y-scroll"
-                >
-                  <!-- check 1 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="bedspread" />
-                    <label
-                      for="bedspread"
-                      class="font-normal text-sm text-[#404040]"
-                      >رو بالشتی</label
-                    >
-                  </div>
-                  <!-- check 2 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="pillowcase" />
-                    <label
-                      for="pillowcase"
-                      class="font-normal text-sm text-[#404040]"
-                      >روتختی</label
-                    >
-                  </div>
-                  <!-- check 3 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="pillow" />
-                    <label
-                      for="pillow"
-                      class="font-normal text-sm text-[#404040]"
-                      >بالشت</label
-                    >
-                  </div>
-                  <!-- check 4 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="mattress" />
-                    <label
-                      for="mattress"
-                      class="font-normal text-sm text-[#404040]"
-                      >تشک</label
-                    >
-                  </div>
-                  <!-- check 5 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="orthopedic-mattress" />
-                    <label
-                      for="orthopedic-mattress"
-                      class="font-normal text-sm text-[#404040]"
-                      >تشک طبی</label
-                    >
-                  </div>
-                  <!-- check 6 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="orthopedic-pillow" />
-                    <label
-                      for="orthopedic-pillow"
-                      class="font-normal text-sm text-[#404040]"
-                      >بالشت طبی</label
-                    >
-                  </div>
-                  <!-- check 7 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="duvet" />
-                    <label
-                      for="duvet"
-                      class="font-normal text-sm text-[#404040]"
-                      >لحاف</label
-                    >
-                  </div>
-                  <!-- check 8 -->
-                  <div class="flex items-center gap-2">
-                    <input type="checkbox" id="blanket" />
-                    <label
-                      for="blanket"
-                      class="font-normal text-sm text-[#404040]"
-                      >پتو</label
-                    >
+                      <label
+                        for="orthopedic-pillow"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >بالشت طبی</label
+                      >
+                    </div>
+                    <!-- check 7 -->
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" id="duvet" class="peer" />
+                      <label
+                        for="duvet"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >لحاف</label
+                      >
+                    </div>
+                    <!-- check 8 -->
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" id="blanket" class="peer" />
+                      <label
+                        for="blanket"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >پتو</label
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Colors -->
               <div class="p-4 bg-[#FAFAFA] rounded-xl">
                 <p
-                  class="text-sm text-[#121111] flex items-center justify-between mb-3.75"
+                  class="filter-title text-sm text-[#121111] flex items-center justify-between mb-3.75"
                 >
                   رنگ
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <svg
+                    class="chevron-toggle"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
                     <path
                       d="M8.46997 13.3601L12 9.84011L15.53 13.3601"
                       stroke="#121111"
@@ -779,141 +812,141 @@
                     />
                   </svg>
                 </p>
-                <!-- search input -->
-                <form
-                  action=""
-                  class="flex items-center bg-[#FFFFFF] border border-[#EDF6FD] p-2.5 h-10.5 rounded-lg w-full mb-6"
-                >
-                  <input
-                    class="w-full pr-1 pl-1 outline-none font-normal text-xs"
-                    type="text"
-                    placeholder="جستجو رنگ "
-                  />
-                  <button type="submit">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path
-                        d="M9.58341 17.5C13.9557 17.5 17.5001 13.9555 17.5001 9.58329C17.5001 5.21104 13.9557 1.66663 9.58341 1.66663C5.21116 1.66663 1.66675 5.21104 1.66675 9.58329C1.66675 13.9555 5.21116 17.5 9.58341 17.5Z"
-                        stroke="#121111"
-                        stroke-width="1.25"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.3334 18.3333L16.6667 16.6666"
-                        stroke="#868686"
-                        stroke-width="1.25"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </form>
-                <!-- checkboxes list -->
-                <div
-                  class="scroll-box flex flex-col gap-4 h-54 overflow-y-scroll"
-                >
-                  <!-- check 1 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="blue" />
-                      <label
-                        for="blue"
-                        class="font-normal text-sm text-[#404040]"
-                        >آبی</label
+                <div class="filter-list hidden">
+                  <!-- search input -->
+                  <form
+                    action=""
+                    class="flex items-center bg-[#FFFFFF] border border-[#EDF6FD] p-2.5 h-10.5 rounded-lg w-full mb-6"
+                  >
+                    <input
+                      class="w-full pr-1 pl-1 outline-none font-normal text-xs"
+                      type="text"
+                      placeholder="جستجو رنگ "
+                    />
+                    <button type="submit">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
                       >
+                        <path
+                          d="M9.58341 17.5C13.9557 17.5 17.5001 13.9555 17.5001 9.58329C17.5001 5.21104 13.9557 1.66663 9.58341 1.66663C5.21116 1.66663 1.66675 5.21104 1.66675 9.58329C1.66675 13.9555 5.21116 17.5 9.58341 17.5Z"
+                          stroke="#121111"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.3334 18.3333L16.6667 16.6666"
+                          stroke="#868686"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </form>
+                  <!-- checkboxes list -->
+                  <div
+                    class="scroll-box flex flex-col gap-4 h-54 overflow-y-scroll"
+                  >
+                    <!-- check 1 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="blue" class="peer" />
+                        <label
+                          for="blue"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >آبی</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-[#6691FF]"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-[#6691FF]"></div>
-                  </div>
-
-                  <!-- check 2 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="cream" />
-                      <label
-                        for="cream"
-                        class="font-normal text-sm text-[#404040]"
-                        >کرم</label
-                      >
+                    <!-- check 2 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="cream" class="peer" />
+                        <label
+                          for="cream"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >کرم</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-[#FFDAA7]"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-[#FFDAA7]"></div>
-                  </div>
-
-                  <!-- check 3 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="black" />
-                      <label
-                        for="black"
-                        class="font-normal text-sm text-[#404040]"
-                        >مشکی</label
-                      >
+                    <!-- check 3 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="black" class="peer" />
+                        <label
+                          for="black"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >مشکی</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-[#353232]"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-[#353232]"></div>
-                  </div>
-
-                  <!-- check 4 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="orange" />
-                      <label
-                        for="orange"
-                        class="font-normal text-sm text-[#404040]"
-                        >نارنجی</label
-                      >
+                    <!-- check 4 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="orange" class="peer" />
+                        <label
+                          for="orange"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >نارنجی</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-[#F29665]"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-[#F29665]"></div>
-                  </div>
-
-                  <!-- check 5 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="red" />
-                      <label
-                        for="red"
-                        class="font-normal text-sm text-[#404040]"
-                        >قرمز</label
-                      >
+                    <!-- check 5 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="red" class="peer" />
+                        <label
+                          for="red"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >قرمز</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-[#FF5C5F]"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-[#FF5C5F]"></div>
-                  </div>
-
-                  <!-- check 6 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="green" />
-                      <label
-                        for="green"
-                        class="font-normal text-sm text-[#404040]"
-                        >سبز</label
-                      >
+                    <!-- check 6 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="green" class="peer" />
+                        <label
+                          for="green"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >سبز</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-[#BAE399]"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-[#BAE399]"></div>
-                  </div>
-
-                  <!-- check 7 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="pink" />
-                      <label
-                        for="pink"
-                        class="font-normal text-sm text-[#404040]"
-                        >صورتی</label
-                      >
+                    <!-- check 7 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="pink" class="peer" />
+                        <label
+                          for="pink"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >صورتی</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-pink-300"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-pink-300"></div>
-                  </div>
-
-                  <!-- check 8 -->
-                  <div class="flex items-center justify-between pl-5">
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="purple" />
-                      <label
-                        for="purple"
-                        class="font-normal text-sm text-[#404040]"
-                        >بنفش</label
-                      >
+                    <!-- check 8 -->
+                    <div class="flex items-center justify-between pl-5">
+                      <div class="flex items-center gap-2">
+                        <input type="checkbox" id="purple" class="peer" />
+                        <label
+                          for="purple"
+                          class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                          >بنفش</label
+                        >
+                      </div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-violet-800"></div>
                     </div>
-                    <div class="w-5 h-5 rounded-[5.14px] bg-violet-800"></div>
                   </div>
                 </div>
               </div>
