@@ -31,6 +31,8 @@ body {
   --color-product-bg: #f4f4f4;
   --color-price: #28221e;
   --color-old-price: #837c74;
+  --color-cloud-gray: #FAFAFA;
+  --color-text-dark: #121111;
 }
 
 @layer components {

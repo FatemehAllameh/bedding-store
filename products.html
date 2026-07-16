@@ -322,9 +322,9 @@
             class="hidden xl:flex items-center justify-between xl:gap-6 2xl:gap-8 mb-4"
           >
             <div
-              class="bg-[#FAFAFA] h-14 rounded-xl flex items-center justify-between min-w-53.5 p-4 2xl:min-w-71.25"
+              class="bg-cloud-gray h-14 rounded-xl flex items-center justify-between min-w-53.5 p-4 2xl:min-w-71.25"
             >
-              <p class="flex items-center gap-2 text-[#121111] text-base">
+              <p class="flex items-center gap-2 text-text-dark text-base">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path
                     d="M4.49992 1.75H15.4999C16.4166 1.75 17.1666 2.5 17.1666 3.41667V5.25C17.1666 5.91667 16.7499 6.75 16.3333 7.16667L12.7499 10.3333C12.2499 10.75 11.9166 11.5833 11.9166 12.25V15.8333C11.9166 16.3333 11.5833 17 11.1666 17.25L9.99992 18C8.91659 18.6667 7.41658 17.9167 7.41658 16.5833V12.1667C7.41658 11.5833 7.08325 10.8333 6.74992 10.4167L3.58325 7.08333C3.16659 6.66667 2.83325 5.91667 2.83325 5.41667V3.5C2.83325 2.5 3.58325 1.75 4.49992 1.75Z"
@@ -368,7 +368,7 @@
             </div>
             <!-- Sort Toolbar -->
             <div
-              class="bg-[#FAFAFA] h-14 pt-4 px-4 rounded-xl flex items-center justify-between w-[80%] gap-5 2xl:pl-9.25 2xl:pr-25"
+              class="bg-cloud-gray h-14 pt-4 px-4 rounded-xl flex items-center justify-between w-[80%] gap-5 2xl:pl-9.25 2xl:pr-25"
             >
               <div class="flex items-start gap-7.75">
                 <p class="text-base text-[#14151B] flex items-center gap-2">
@@ -533,9 +533,9 @@
             <!-- Side Bar -->
             <aside class="w-57.5 min-w-53.5 2xl:w-71.25 hidden xl:block">
               <!-- Price Range -->
-              <div class="p-4 bg-[#FAFAFA] rounded-xl mb-4">
+              <div class="p-4 bg-cloud-gray rounded-xl mb-4">
                 <p
-                  class="filter-title text-sm text-[#121111] flex items-center justify-between mb-6"
+                  class="filter-title text-sm text-text-dark flex items-center justify-between cursor-pointer mb-0"
                 >
                   بازه قیمتی
                   <svg
@@ -571,8 +571,8 @@
                   </div>
                   <!--  -->
                   <div class="w-full flex items-center justify-between mb-3">
-                    <p class="text-xs text-[#121111]">200 هزار تومان</p>
-                    <p class="text-xs text-[#121111]">700 هزار تومان</p>
+                    <p class="text-xs text-text-dark">200 هزار تومان</p>
+                    <p class="text-xs text-text-dark">700 هزار تومان</p>
                   </div>
                   <!--  -->
                   <div
@@ -585,7 +585,7 @@
                       class="w-30 2xl:w-45 h-10 px-3 py-2.25 flex items-center justify-end gap-4 2xl:gap-6 border border-primary rounded-xl"
                     >
                       <p
-                        class="font-normal text-xs text-[#121111] flex items-center"
+                        class="font-normal text-xs text-text-dark flex items-center"
                       >
                         <svg
                           class="ml-1.25"
@@ -602,7 +602,7 @@
                         </svg>
                         200
                       </p>
-                      <p class="font-normal text-xs text-[#121111]">
+                      <p class="font-normal text-xs text-text-dark">
                         هزارتومان
                       </p>
                     </div>
@@ -618,11 +618,11 @@
                       class="w-30 2xl:w-45 h-10 px-3 py-2.25 flex items-center justify-end gap-4 2xl:gap-6"
                     >
                       <p
-                        class="font-normal text-xs text-[#121111] flex items-center"
+                        class="font-normal text-xs text-text-dark flex items-center"
                       >
                         700
                       </p>
-                      <p class="font-normal text-xs text-[#121111]">
+                      <p class="font-normal text-xs text-text-dark">
                         هزارتومان
                       </p>
                     </div>
@@ -631,9 +631,9 @@
               </div>
               <!-- Toggle Switch -->
               <div
-                class="p-4 bg-[#FAFAFA] rounded-xl h-14 flex items-center justify-between mb-4"
+                class="p-4 bg-cloud-gray rounded-xl h-14 flex items-center justify-between mb-4"
               >
-                <p class="text-sm text-[#121111]">نمایش کالاهای موجود</p>
+                <p class="text-sm text-text-dark">نمایش کالاهای موجود</p>
                 <label class="relative inline-flex cursor-pointer">
                   <input type="checkbox" class="sr-only peer" />
                   <!-- track -->
@@ -647,9 +647,9 @@
                 </label>
               </div>
               <!-- Categories -->
-              <div class="p-4 bg-[#FAFAFA] rounded-xl mb-4">
+              <div class="p-4 bg-cloud-gray rounded-xl mb-4">
                 <p
-                  class="filter-title text-sm text-[#121111] flex items-center justify-between mb-3.75"
+                  class="filter-title text-sm text-text-dark flex items-center justify-between cursor-pointer mb-0"
                 >
                   دسته بندی
                   <svg
@@ -708,26 +708,89 @@
                     class="scroll-box flex flex-col gap-4 h-54 overflow-y-scroll"
                   >
                     <!-- check 1 -->
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="bedspread" class="peer" />
+                    <div class="flex items-center gap-2 relative">
+                      <input
+                        type="checkbox"
+                        id="bedspread"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                      />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
                       <label
                         for="bedspread"
-                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
-                        >رو بالشتی</label
-                      >
-                    </div>
-                    <!-- check 2 -->
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="pillowcase" class="peer" />
-                      <label
-                        for="pillowcase"
                         class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                         >روتختی</label
                       >
                     </div>
+                    <!-- check 2 -->
+                    <div class="flex items-center gap-2 relative">
+                      <input
+                        type="checkbox"
+                        id="pillowcase"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                      />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                      <label
+                        for="pillowcase"
+                        class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
+                        >رو بالشتی</label
+                      >
+                    </div>
                     <!-- check 3 -->
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="pillow" class="peer" />
+                    <div class="flex items-center gap-2 relative">
+                      <input
+                        type="checkbox"
+                        id="pillow"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                      />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
                       <label
                         for="pillow"
                         class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
@@ -735,8 +798,29 @@
                       >
                     </div>
                     <!-- check 4 -->
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="mattress" class="peer" />
+                    <div class="flex items-center gap-2 relative">
+                      <input
+                        type="checkbox"
+                        id="mattress"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                      />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
                       <label
                         for="mattress"
                         class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
@@ -744,25 +828,60 @@
                       >
                     </div>
                     <!-- check 5 -->
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 relative">
                       <input
                         type="checkbox"
                         id="orthopedic-mattress"
-                        class="peer"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
                       />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
                       <label
                         for="orthopedic-mattress"
                         class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                         >تشک طبی</label
                       >
                     </div>
+
                     <!-- check 6 -->
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 relative">
                       <input
                         type="checkbox"
                         id="orthopedic-pillow"
-                        class="peer"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
                       />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
                       <label
                         for="orthopedic-pillow"
                         class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
@@ -770,8 +889,29 @@
                       >
                     </div>
                     <!-- check 7 -->
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="duvet" class="peer" />
+                    <div class="flex items-center gap-2 relative">
+                      <input
+                        type="checkbox"
+                        id="duvet"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                      />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
                       <label
                         for="duvet"
                         class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
@@ -779,8 +919,29 @@
                       >
                     </div>
                     <!-- check 8 -->
-                    <div class="flex items-center gap-2">
-                      <input type="checkbox" id="blanket" class="peer" />
+                    <div class="flex items-center gap-2 relative">
+                      <input
+                        type="checkbox"
+                        id="blanket"
+                        class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                      />
+                      <span
+                        class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0.1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
                       <label
                         for="blanket"
                         class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
@@ -791,9 +952,9 @@
                 </div>
               </div>
               <!-- Colors -->
-              <div class="p-4 bg-[#FAFAFA] rounded-xl">
+              <div class="p-4 bg-cloud-gray rounded-xl">
                 <p
-                  class="filter-title text-sm text-[#121111] flex items-center justify-between mb-3.75"
+                  class="filter-title text-sm text-text-dark flex items-center justify-between cursor-pointer mb-0"
                 >
                   رنگ
                   <svg
@@ -853,8 +1014,30 @@
                   >
                     <!-- check 1 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="blue" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
                           for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
@@ -865,10 +1048,32 @@
                     </div>
                     <!-- check 2 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="cream" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
-                          for="cream"
+                          for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                           >کرم</label
                         >
@@ -877,10 +1082,32 @@
                     </div>
                     <!-- check 3 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="black" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
-                          for="black"
+                          for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                           >مشکی</label
                         >
@@ -889,10 +1116,32 @@
                     </div>
                     <!-- check 4 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="orange" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
-                          for="orange"
+                          for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                           >نارنجی</label
                         >
@@ -901,10 +1150,32 @@
                     </div>
                     <!-- check 5 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="red" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
-                          for="red"
+                          for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                           >قرمز</label
                         >
@@ -913,10 +1184,32 @@
                     </div>
                     <!-- check 6 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="green" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
-                          for="green"
+                          for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                           >سبز</label
                         >
@@ -925,10 +1218,32 @@
                     </div>
                     <!-- check 7 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="pink" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
-                          for="pink"
+                          for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                           >صورتی</label
                         >
@@ -937,15 +1252,37 @@
                     </div>
                     <!-- check 8 -->
                     <div class="flex items-center justify-between pl-5">
-                      <div class="flex items-center gap-2">
-                        <input type="checkbox" id="purple" class="peer" />
+                      <div class="flex items-center gap-2 relative">
+                        <input
+                          type="checkbox"
+                          id="blue"
+                          class="peer h-4 w-4 cursor-pointer transition-all appearance-none rounded border border-[#ADADAD] checked:bg-primary checked:border-primary"
+                        />
+                        <span
+                          class="absolute text-white opacity-0 peer-checked:opacity-100 right-0.5 pointer-events-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3 w-3"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="0.1"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                         <label
-                          for="purple"
+                          for="blue"
                           class="font-normal text-sm text-[#404040] peer-checked:font-semibold"
                           >بنفش</label
                         >
                       </div>
-                      <div class="w-5 h-5 rounded-[5.14px] bg-violet-800"></div>
+                      <div class="w-5 h-5 rounded-[5.14px] bg-violet-500"></div>
                     </div>
                   </div>
                 </div>
@@ -1435,29 +1772,29 @@
                 <div
                   class="border border-[#EDEDED] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#EDEDED] transition duration-200 cursor-pointer"
                 >
-                  <p class="text-base text-[#121111]">99</p>
+                  <p class="text-base text-text-dark">99</p>
                 </div>
                 <!-- ... -->
                 <div class="w-10 h-10 flex items-center justify-center">
-                  <p class="font-bold text-base text-[#121111]">...</p>
+                  <p class="font-bold text-base text-text-dark">...</p>
                 </div>
                 <!-- 3 -->
                 <div
                   class="border border-[#EDEDED] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#EDEDED] transition duration-200 cursor-pointer"
                 >
-                  <p class="text-base text-[#121111]">3</p>
+                  <p class="text-base text-text-dark">3</p>
                 </div>
                 <!-- 2 -->
                 <div
                   class="border border-[#EDEDED] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#EDEDED] transition duration-200 cursor-pointer"
                 >
-                  <p class="text-base text-[#121111]">2</p>
+                  <p class="text-base text-text-dark">2</p>
                 </div>
                 <!-- 1 -->
                 <div
                   class="border border-[#EDEDED] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#EDEDED] transition duration-200 cursor-pointer"
                 >
-                  <p class="text-base text-[#121111]">1</p>
+                  <p class="text-base text-text-dark">1</p>
                 </div>
                 <!-- chevron left -->
                 <div
@@ -1479,6 +1816,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer>
       <div class="container mx-auto px-6 sm:px-6 lg:px-12.25 2xl:px-25">
