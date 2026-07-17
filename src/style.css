@@ -119,3 +119,17 @@ body {
 .filter-list.open {
   @apply block;
 }
+
+/* Product Details Page */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
