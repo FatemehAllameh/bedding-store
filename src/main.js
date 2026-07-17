@@ -1,5 +1,10 @@
 import "./style.css";
 
+import Glide from "@glidejs/glide";
+import "@glidejs/glide/dist/css/glide.core.min.css";
+import "@glidejs/glide/dist/css/glide.theme.min.css";
+import { Breakpoints } from "@glidejs/glide/dist/glide.modular.esm.js";
+
 // --- header --- //
 // elements
 const menuBtn = document.querySelector(".menu-btn");
@@ -82,3 +87,12 @@ readlessBtn.addEventListener("click", () => {
   readlessBtn.classList.add("hidden");
   readlessBtn.classList.remove("flex");
 });
+
+// Glide
+new Glide(".glide", {
+  type: "carousel",
+  direction: "rtl",
+  perView: 1.5,
+  focusAt: "center",
+  gap: 12,
+}).mount();
