@@ -8,7 +8,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .home-page {
+  .home-page {
     background-image: repeating-linear-gradient(
       to right,
       #fbfbfb 0,
@@ -31,8 +31,9 @@ body {
   --color-product-bg: #f4f4f4;
   --color-price: #28221e;
   --color-old-price: #837c74;
-  --color-cloud-gray: #FAFAFA;
+  --color-cloud-gray: #fafafa;
   --color-text-dark: #121111;
+  --color-gray-Bg: #f6f6f6;
 }
 
 @layer components {
