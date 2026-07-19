@@ -92,7 +92,7 @@ readlessBtn.addEventListener("click", () => {
 new Glide(".glide", {
   type: "carousel",
   direction: "rtl",
-  perView: 1.5,
-  focusAt: "center",
+  perView: 1.4,
+  focusAt: "0",
   gap: 12,
 }).mount();
